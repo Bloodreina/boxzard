@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BoxZard Tech</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header id="home">
+            <div class="menu">
+                <span class="bar"></span>
+            </div>
+            <div class="container">
+                <div class="content-header">
+                    <img src="img/Camaleao.png" class="camaleao" alt="Camaleao">
+                    <button class="open-nav">
+                        <span class="line line_1"></span>
+                        <span class="line line_2"></span>
+                        <span class="line line_3"></span>
+                    </button>
+                    <nav class="menu">
+                        <ul class="list-menu">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Produto</a></li>
+                            <li><a href="">Simulador</a></li>
+                            <li><a href="">Fale conosco</a></li>
+                            <li><a href="">Login</a></li>
+    
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>Logo</h1>
+                <h2>Frase legal</h2>
+                <a href="#" class="btn main-btn">Leia Sobre</a>
+            </div>
+        </header>
+        <section class="about" id="sobre">
+            <div class="conteudo">
+                <h2>Sobre</h2>
+            </div>
+            <div class="conteudo">
+                <p>Fundada no início de 2019 por um grupo de universitários Bandtec, a BoxZard Tech é uma empresa de tecnologia, especializada em controle de temperatura e umidade de galpões e estoques. Desenvolvedora do software "", capaz de se adaptar a qualquer produto que necessita de controle de temperatura e umidade, sendo extremamente promissora, já reconhecida por sua flexibilidade e inovação</p>
+            </div>
+        </section>
+        <section class="valors">
+            <div class="conteudo">
+                <h2>Nossas ideias </h2>
+            </div>
+            <div class="descricao">
+                <div class="dMenor">
+                    <div class="titulo">
+                        <h3>Missão</h3>
+                    </div>
+                    <div class="cMenor">
+                        <p>
+                                Prover soluções em controle de temperatura e umidade. Adaptando-se a quealquer armazenamento, com tecnologia e praticidade.
+                        </p>
+                    </div>
+                </div>
+                <div class="dMenor">
+                    <div class="titulo">
+                        <h3>Visão</h3>
+                    </div>
+                    <div class="cMenor">
+                        <p>
+                                Ser referência nacional em controle de temperatura e umidade de galpões e estoques
+                        </p>
+                    </div>
+                </div>
+                <div class="dMenor">
+                    <div class="titulo">
+                        <h3>Valores</h3>
+                    </div>
+                    <div class="cMenor">
+                        <p>
+                                Ética, Flexibilidade, Praticidade e Inovação
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(function() {
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 100) {
+            $(".content-header").addClass("teste2");
+            } else {
+            $(".content-header").removeClass("teste2");
+            }
+        });
+    });
+</script>

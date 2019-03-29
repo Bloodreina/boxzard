@@ -1,0 +1,218 @@
+/* Deixar tudo alinhado */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+.btn{
+    display: inline-block;
+    transition: all 650ms;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+/* ajustar imagem no fundo */
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,.9),transparent),
+                url("img/fundo.jpg") bottom no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    
+}
+/* Texto do menu */
+a{
+    text-decoration: none;
+    color: #cccccc;
+}
+/* Botão "Saiba mais" */
+.main-btn{
+    font-size: 1.5rem;
+    border: 2px solid #ffffff;
+    padding: 2rem 2.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    position: relative;
+    margin-top: 15rem;
+}
+
+/* Mouse no botão */
+.main-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+/* botão ativado */
+.main-btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* tirar stilo de lista */
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* alinhar barra */
+.content-header{
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.teste2{
+    background-color: #ffffff !important;
+    color: black; 
+}
+/* esconder botão nav */
+.open-nav{
+    display: none;
+}
+
+/* alinhar barra */
+nav .list-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* tamanho do camaleao */
+.camaleao{
+    width: 50px;
+}
+
+/* distancia das letras na barra */
+nav{
+    width: 100%;
+    max-width: 700px;
+}
+
+/* mouse no menu  */
+nav .list-menu a:hover{
+    color: #ffff00;
+}
+
+/* linha embaixo */
+nav .list-menu a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #ffff00;
+    transition: all .3s ease;
+}
+
+/* faz aparecer a linha */
+nav .list-menu a:hover::before{
+    width: 100%;
+    transition: all .3s ease;
+}
+/* section sobre */
+.about{
+    padding: 7%;
+}
+.conteudo{
+    display: block;
+    margin: 0 25%;
+    text-align: center;
+}
+.descricao{
+    display: flex;
+    margin-left: 13%;
+    margin-right: 20%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.conteudo p{
+    font-size: 16px;
+    font-family: Merriweather,"Helvetica Neue",Arial,sans-serif;
+}
+h2{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+.valors{
+    justify-content: center;
+}
+.dMenor{
+    width: 400px;
+    margin-left: 100px;
+}
+/* responsivo menu*/
+@media (max-width:620px){
+    .descricao{
+        display: block;
+    }
+}
+@media (max-width: 425px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: hsla(60, 100%, 50%, 0.89);
+
+    }
+    nav .list-menu{
+        flex-direction: column;
+        margin: 0;
+        padding: 60px 0 0 0;
+
+    }
+    nav .list-menu a{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .open-nav{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 30px;
+
+    }
+    .open-nav .line{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #ffffff;
+        left: 0;
+        border-radius: 5px;
+    }
+    .open-nav .line.line_1{
+        top: 0;
+    }
+    .open-nav .line.line_2{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .open-nav .line.line_3{
+        bottom: 0;
+    }
+}
+
