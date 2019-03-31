@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador </title>
+</head>
+
+<body>
+    Simulador Financeiro
+    <form>
+
+        Possui controle de temperatura ?
+        <input type="radio" name=" comp_temp" >Sim
+        <input type="radio" name="comp_temp"> Não
+
+        <br><br>
+        Quantos funcionários fazem esse controle?
+        <input id="func" type="number" placeholder="Digite o número de funcionários" autofocus><br>
+
+        Salário pago as funcionários
+        <input id="sal" type="number" placeholder="Digite o valor do salário"> <br> <br>
+
+        Digite a metragem do seu galpão
+        <input id="metro" type="number" placeholder="Digite m² do galpão"> <br> <br>
+        Valor do seu estoque em R$
+        <input id="est" type="number" placeholder="Digite o valor em R$"> <br> <br>
+
+        <button type="button" onclick="calcula()"> Calcule seu Plano </button>
+
+        <div id="mensagem" style="text-align: center; font-size: 1.5em " style="color:black"></div>
+    </form>
+</body>
+
+</html>
+<script>
+    function calcula(){
+
+    var mostra=Number(func.value)*Number(sal.value);
+    var estoque=Number(est.value)*0.4;
+    var custo=(Number(metro.value)/10)
+    var total=(21*custo)+200;
+    var lucro=(est.value*1.4)*12;
+ 
+    mensagem.innerHTML = `Adquirindo nossa solução você pagará R$ ${total} e terá um lucro anual 
+de R$ ${lucro} `
+    }
+
+</script>
