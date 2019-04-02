@@ -185,7 +185,7 @@ nav .list-menu a:hover::before{
     margin-left: 13%;
     margin-right: 20%;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     align-content: center;
     flex-direction: row;
     justify-content: center;
@@ -208,6 +208,18 @@ h2{
 .dMenor{
     width: 400px;
     margin-left: 100px;
+    border: solid #00000059 5px;
+    border-radius: 50px;
+    padding: 10px;
+}
+.logo_missao {
+    width: 35px;
+}
+.logo_visao {
+    width: 35px;
+}
+.logo_valores {
+    width: 35px;
 }
 h3{
     color: #ffffff;
