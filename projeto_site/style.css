@@ -12,7 +12,9 @@
     display: inline-block;
     transition: all 650ms;
     border-radius: 3px;
+    /* transformar texto em letra maiuscula */
     text-transform: uppercase;
+    
 }
 /* ajustar imagem no fundo */
 header{
@@ -343,6 +345,10 @@ form .submit:hover{
 }
 #produto .textoProduto3{
     padding: 0 100px 0 100px;
+}
+
+::placeholder{
+    color:#fff;
 }
 /* responsivo menu*/
 @media (max-width:620px){
