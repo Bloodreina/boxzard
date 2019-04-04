@@ -29,22 +29,3 @@
     
     }
 
-    // Rolagem do menu
-
-	$(function() {
-        $(window).on("scroll", function() {
-            if($(window).scrollTop() > 100) {
-            $(".content-header").addClass("teste2");
-            } else {
-            $(".content-header").removeClass("teste2");
-            }
-        });
-    });
-    var $doc = $('html, body');
-    $('.scroll-Menu').click(function() {
-        $doc.animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
-    });
-

@@ -189,3 +189,22 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </body>
 </html>
+
+<script type="text/javascript">
+    $(function() {
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 100) {
+            $(".content-header").addClass("teste2");
+            } else {
+            $(".content-header").removeClass("teste2");
+            }
+        });
+    });
+    var $doc = $('html, body');
+    $('.scroll-Menu').click(function() {
+        $doc.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    });
+</script>
