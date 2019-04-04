@@ -27,7 +27,7 @@ header{
     flex-direction: column;
     text-align: center;
     position: relative;
-    
+    z-index: 3000;
 }
 /* Texto do menu */
 a{
@@ -235,11 +235,12 @@ h3{
     background-color: #f3f3f3;
     padding-top: 50px;
     padding-bottom: 50px; 
+    margin-top: 30px;
 }
 
 /* borda do Formulario */
 .box-form{
-    border: 1px rgba(0, 0, 0, 0.336) solid;
+    border: 0px rgba(0, 0, 0, 0.336) solid;
     margin:0 20% 0 20%;
     padding-bottom: 5%;
     box-shadow: #000;
@@ -262,12 +263,32 @@ h3{
 .contact-litle h2{
     font-size:16px;
 }
+
+input::placeholder{
+    color: black;
+}
+textarea::placeholder{
+    color: black;
+}
+
 /*efeito do formulario*/
 form{
     margin-top:50px;
     transition: all 4s ease-in-out;
 }
 /*tamanho do formulario e estilo*/
+.form-control2{
+    width:600px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid gray;
+    color: #000000;
+    font-size: 16px;
+    height: 100px;
+    font-family:sans-serif;
+    padding-top: 10px; 
+}
 .form-control{
     width:600px;
     background:transparent;
@@ -277,6 +298,7 @@ form{
     color: #000000;
     font-size: 16px;
     height: 100px;
+    font-family:sans-serif;
 }
 /*tamanho do formulario e estilo referente ao (nome, sobrenome,telefone,email)*/
 .form-control1{
@@ -332,19 +354,46 @@ form .submit:hover{
     text-align: center;
     background-color:rgba(206, 206, 206, 0.658); 
 }
+
+.imgArduino{
+    background-image: url("img/arduino-dht11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    padding: 80px;
+    height: 420px;
+    margin-top: 10px;
+}
+.imgGalpao{
+    background-image: url("img/galpao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    padding: 80px;
+    float: right;
+    position: relative;
+    margin-top: -300px;
+    height: 300px;
+}
+
 #produto .textoProduto h2,#produto .textoProduto2 h2,#produto .textoProduto3 h2{
     color: #000;
 }
 #produto .textoProduto{
-    padding-right: 60%;
-    padding-bottom: 100px;
+    /*padding-right: 60%;
+    padding-bottom: 100px;*/
+    width: 50%;
+    padding: 80px;
+    position: relative;
 }
 #produto .textoProduto2{
-    padding-left: 60%;
-    padding-bottom: 100px;
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+    padding: 70px;
 }
 #produto .textoProduto3{
-    padding: 0 100px 0 100px;
+    padding: 20px 100px 0 100px;
 }
 
 ::placeholder{
@@ -405,4 +454,103 @@ form .submit:hover{
 .logo {
     margin-top: 7rem;
     width: 700px;
+}
+
+/*simulador*/
+.texto01{
+    font-size: 18px;
+
+}
+/*tamanho das inputs do formulario*/
+input{
+    width: 400px;
+    height: 40PX;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid gray;
+    position: relative;
+    
+}
+/* resultado do simulador*/
+.resultado{
+    height:300px;
+    width: 550px;
+    float: right;
+    margin: 30px;
+    margin-top: 100px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0;
+    transition: 1s all;
+    box-shadow: 1px 1px 1px 1px  rgb(209, 207, 207);
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+/*corpo do formulario*/
+.corpoSimulador{
+    
+    height:470px;
+    width: 100%;
+    font-family:sans-serif;
+    margin-bottom: 40px;
+    font-size: 18px;
+    float: left;
+    display: flex;
+    padding: 0 10%;
+    color: rgb(88, 85, 85);
+    background-image: linear-gradient(to right, rgba(22, 18, 18, 0.027),#0074f880);
+
+}
+/*configuração do botão do simulador*/
+button.botaoConfig {
+    
+    background: rgba(2, 2, 114, 0.863);
+    border-color: transparent;
+    color:#fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height:50px;
+    width: 200px;;
+    margin-top:20px; 
+    font-family: arial; 
+    border-radius: 10px;
+
+    
+                               
+}
+.botaoConfig:hover{
+    background-color:rgb(0, 0, 0);
+    cursor:pointer;
+    color: #fdf908;}
+/*quebra das inputs*/
+p{
+    margin-top:10px;
+}
+/*configuração de centralização do formulario*/
+.editForm{
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    background-color:bl;
+}
+/*animação das caixas*/
+@keyframes showResults{
+    from{
+        left:50%;
+    }
+    to{
+        left:0%;
+        transform: translateX(0);
+        margin-right: 100px;
+    }
+}
+.animation{
+    animation-name:showResults;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
 }

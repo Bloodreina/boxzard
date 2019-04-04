@@ -7,9 +7,9 @@ html{
     overflow-x:hidden;
     background: url("fundo.jpg") no-repeat center center fixed;
     background-size: cover;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -ms-background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
 }
 
