@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script src="../js/script.js"></script>
+    <title>Login</title>
 </head>
+
 <body>
-    <form>
-        <input type="text">Nome:
-        <input type="text">Sobrenome:
-        <input type="text">e-mail:
-        <input type="text">senha:
-        <input type="number">CPF/CNPJ:
-        <input type="text">Estado:
-        <input type="text">Cidade:
-        <input type="text">Logradouro:
-        <input type="number">Numero
-        <style> campo não obrigatorio </style>
-        <input type="text">Complemento:
-        <input type="number">CEP:
-    </form>
+    <script>
+        var pagina=0;
+    </script>
+    <!-- <img src="logo" alt=""> -->
+    <header>
+        <form action="" method="post">
+            <div id="topo"></div>
+            <h2 id="titulo">Cadastro</h2>
+            <div id="conteudo">
+            
+                <input type="text" placeholder="nome">
+                <input type="text" placeholder="Sobrenome">
+                <input type="text" placeholder="e-mail">
+                <input type="password" placeholder="senha">
+                <input type="password" placeholder="confirmar senha">
+                </div>
+                <div id="conteudo2">
+                <input type="number" placeholder="CPF/CNPJ">
+                <input type="text" placeholder="Estado">
+                <input type="text" placeholder="Cidade">
+                <input type="text" placeholder="Logradouro">
+                <input type="number" placeholder="Numero da rua">
+                <input type="text" placeholder="Complemento">
+                <input type="number" placeholder="CEP">
+                </div>
+                <div id="conteudo3">
+                <input type="number" placeholder="tamanho (m2)">
+                <input type="text" placeholder="quantidade de ar-condicionado">
+                <input type="text" placeholder="potência">
+            </div>
+            <div id="rodape">
+                <div id="lEsquerdo" onclick="proximo(--pagina)">
+                    <a id="aaa">
+                        Login
+                    </a>
+                </div>
+                <div id="lDireito" onclick="proximo(++pagina)">
+                    <a>
+                        Proximo
+                    </a>
+                </div>
+                
+            </div>
+            </div>
+        </form>
+    </header>
 </body>
+
 </html>
