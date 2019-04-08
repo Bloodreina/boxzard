@@ -5,11 +5,11 @@ html{
     font-family: Arial, Tahoma, sans-serif;
     overflow-y:hidden;
     overflow-x:hidden;
-    background: url("fundo.jpg") no-repeat center center fixed;
+    background: url("../img/fundoLogin.jpg") no-repeat center center fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -ms-background-size: cover; 
     -o-background-size: cover;
 }
 
@@ -29,7 +29,10 @@ form {
 
 input::placeholder{
     -webkit-text-fill-color: #ffffffa2;
+    -moz-text-fill-color: #ffffffa2;
+    -ms-text-fill-color: #ffffffa2;
     -o-text-fill-color: #ffffffa2;
+    color: #ffffffa2;
     
 }
 
@@ -70,6 +73,13 @@ a{
 
 #esqueciSenha{
     margin-bottom: 14%;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 340px;
+    position: relative;
 }
 
 #topo{

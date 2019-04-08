@@ -1,0 +1,589 @@
+/* Deixar tudo alinhado */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+/* Tag A */
+a{
+    text-decoration: none;
+    color: #cccccc;
+}
+
+/* Tag h2 */
+h2{
+    color: #ffffff;
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+/* tag h3 */
+h3, ::placeholder{
+    color: #ffffff;
+}
+
+/* tirar stilo de lista */
+ul{
+    list-style: none;
+}
+
+/* ajustar imagem no fundo */
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(0,0,0,.9),transparent),
+    url("../img/fundo.jpg") bottom no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 3000;
+}
+
+/* Menu Superior */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* alinhar barra */
+.content-header{
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Mudar cor da barra com scroll */
+.menu-scroll{
+    background-color: #000000 !important;
+    color: black; 
+}
+
+/* esconder botão nav */
+.open-nav{
+    display: none;
+}
+
+/* alinhar barra */
+nav .list-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* mouse no menu  */
+nav .list-menu a:hover{
+    color: #fdf908;
+}
+
+/* distancia das letras na barra */
+nav{
+    width: 100%;
+    max-width: 700px;
+}
+
+/* linha embaixo */
+nav .list-menu a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #fdf908;
+    transition: all .3s ease;
+}
+
+/* faz aparecer a linha */
+nav .list-menu #mHome:hover::before{
+    width: 54%;
+    transition: all .3s ease;
+}
+nav .list-menu #mSobre:hover::before{
+    width: 61%;
+    transition: all .3s ease;
+}
+nav .list-menu #mProduto:hover::before{
+    width: 69%;
+    transition: all .3s ease;
+}
+nav .list-menu #mSimulador:hover::before{
+    width: 79%;
+    transition: all .3s ease;
+}
+nav .list-menu #mFale:hover::before{
+    width: 89%;
+    transition: all .3s ease;
+}
+nav .list-menu a:hover::before{
+    width: 100%;
+    transition: all .3s ease;
+}
+
+/* tamanho do camaleao */
+.camaleao{
+    width: 50px;
+}
+
+/* Tamanho do logo */
+.logo {
+    margin-top: 7rem;
+    width: 700px;
+}
+
+/* Botão na Tela Home */
+.btn{
+    display: inline-block;
+    transition: all 650ms;
+    border-radius: 3px;
+    text-transform: uppercase;    /* transformar texto em letra maiuscula */
+    
+}
+
+/* Botão "Saiba mais" */
+.main-btn{
+    font-size: 1.5rem;
+    border: 2px solid #ffffff;
+    padding: 2rem 2.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    position: relative;
+    margin-top: 1vh;
+    color: #ffffff;
+}
+
+/* Mouse no botão */
+.main-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    background-color: black ;
+    border: 2px solid #fdf908;
+    color: #fdf908;
+}
+
+/* Botão ativado */
+.main-btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* section about */
+.about{
+    background-color: #299fad;
+    color: #2e2e2e;
+    padding: 7%;
+}
+
+/* section .ideias */
+.ideias{
+    background-color: #299fad;
+    color: #2e2e2e;
+    justify-content: center;
+    height: 380px;
+}
+
+.conteudo{
+    display: block;
+    margin: 0 25%;
+    text-align: center;
+}
+
+.conteudo p{
+    font-size: 16px;
+    font-family: Merriweather,"Helvetica Neue",Arial,sans-serif;
+}
+
+.descricao{
+    display: flex;
+    margin-left: 13%;
+    margin-right: 20%;
+    text-align: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dMenor{
+    width: 400px;
+    margin-left: 100px;
+    border: solid #00000059 5px;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* icones ideias */
+.logo_missao, .logo_visao, .logo_valores {
+    width: 35px;
+}
+
+/* Section produto */
+#produto{
+    display: block;
+    padding: 50px;
+    align-content: center;
+    text-align: center;
+    background-color:rgba(206, 206, 206, 0.658); 
+}
+
+.imgArduino{
+    background-image: url("../img/arduino-dht11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    padding: 80px;
+    height: 420px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.imgGalpao{
+    background-image: url("../img/galpao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    padding: 80px;
+    float: right;
+    position: relative;
+    margin-top: -300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+#produto .textoProduto h2,#produto .textoProduto2 h2,#produto .textoProduto3 h2{
+    color: #000;
+}
+
+#produto .textoProduto{
+    width: 50%;
+    padding: 80px;
+    position: relative;
+}
+
+#produto .textoProduto2{
+    width: 50%;
+    float: right;
+    margin-top: 30px;
+    padding: 70px;
+}
+
+#produto .textoProduto3{
+    padding: 20px 100px 0 100px;
+}
+
+/*Section simulador*/
+
+#simulador{
+    display: block;
+    padding: 50px;
+    align-content: center;
+    text-align: center;
+    color: rgb(88, 85, 85);
+    background-image: linear-gradient(to right, rgba(22, 18, 18, 0.027),#0074f880);
+    height:470px;
+    width: 100%;
+    font-family:sans-serif;
+    margin-bottom: 40px;
+    font-size: 18px;
+    float: left;
+    display: flex;
+}
+
+.texto01{
+    font-size: 18px;
+    
+}
+
+/*tamanho das inputs do formulario*/
+input{
+    width: 400px;
+    height: 40PX;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid gray;
+    position: relative;
+    
+}
+
+/* resultado do simulador*/
+.resultado{
+    height:300px;
+    width: 550px;
+    float: right;
+    margin: 30px;
+    margin-top: 100px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0;
+    transition: 1s all;
+    box-shadow: 1px 1px 1px 1px  rgb(209, 207, 207);
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+
+/*corpo do formulario*/
+.corpoSimulador{
+    
+    height:470px;
+    width: 100%;
+    font-family:sans-serif;
+    margin-bottom: 40px;
+    font-size: 18px;
+    float: left;
+    display: flex;
+    padding: 0 10%;
+
+    
+}
+
+/*configuração do botão do simulador*/
+button.botaoConfig {
+    
+    background: rgba(2, 2, 114, 0.863);
+    border-color: transparent;
+    color:#fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height:50px;
+    width: 200px;;
+    margin-top:20px; 
+    font-family: arial; 
+    border-radius: 10px;
+
+    
+                               
+}
+
+.botaoConfig:hover{
+    background-color:rgb(0, 0, 0);
+    cursor:pointer;
+    color: #fdf908;
+}
+    /*quebra das inputs*/
+.editForm p{
+    margin-top:10px;
+}
+
+/*configuração de centralização do formulario*/
+.editForm{
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    background-color:bl;
+}
+
+/*animação das caixas*/
+@keyframes showResults{
+    from{
+        left:50%;
+    }
+    to{
+        left:0%;
+        transform: translateX(0);
+        margin-right: 100px;
+    }
+}
+
+.animation{
+    animation-name:showResults;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+/* section faleConosco */
+#faleConosco{
+    display: block;
+    padding: 50px;
+    align-content: center;
+    text-align: center;
+    background-color:rgba(206, 206, 206, 0.658); 
+    text-align:center;
+    background-size:cover;
+    background-position: center;
+    font-family:sans-serif;
+    background-color: #f3f3f3;
+    margin-top: 30px;
+}
+
+/* borda do Formulario */
+.box-form{
+    border: 0px rgba(0, 0, 0, 0.336) solid;
+    margin:0 20% 0 20%;
+    padding-bottom: 5%;
+    box-shadow: #000;
+}
+
+/*texto no topo do formulario*/
+.contact-title{
+    margin-top:50px;
+    color: rgb(131, 130, 130);
+    text-transform:uppercase;
+    transition: all 4s ease-in-out;
+}
+
+/*texto no topo do formulario referente a tag h1*/
+.contact-litle h1{
+    padding: 0;
+    font-size:32px;
+    line-height:10px;
+}
+
+/*texto no topo do formulario referente a tag h1*/
+.contact-litle h2{
+    font-size:16px;
+}
+
+input::placeholder,textarea::placeholder{
+    color: black;
+}
+
+/*efeito do formulario*/
+form{
+    margin-top:50px;
+    transition: all 4s ease-in-out;
+}
+
+/*tamanho do formulario e estilo*/
+.form-control2{
+    width:600px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid gray;
+    color: #000000;
+    font-size: 16px;
+    height: 100px;
+    font-family:sans-serif;
+    padding-top: 10px; 
+}
+
+.form-control{
+    width:600px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid gray;
+    color: #000000;
+    font-size: 16px;
+    height: 100px;
+    font-family:sans-serif;
+}
+
+/*tamanho do formulario e estilo referente ao (nome, sobrenome,telefone,email)*/
+.form-control1{
+    width:300px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom:1px solid gray;
+    color: black;
+    font-size: 16px;
+}
+
+/*tamanho da input largura*/
+#contact-form input{
+    height:45px;
+}
+
+/*botão */
+form .submit{
+    background: rgba(13, 13, 92, 0.541);
+    border-color: transparent;
+    color:#fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height:50px;
+    margin-top:20px;
+}
+
+/*hover do botão*/
+form .submit:hover{
+    background-color:rgb(0, 0, 0);
+    cursor:pointer;
+    color: #fdf908;
+
+}
+
+/* rodape */
+.rodape{
+    height: 200px;
+    background-color:rgb(73, 73, 75);
+    color:#fff;
+    font-size: 16px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+
+/* responsivo menu*/
+@media (max-width:620px){
+    .descricao{
+        display: block;
+    }
+}
+@media (max-width: 425px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background: hsla(60, 100%, 50%, 0.89);
+
+    }
+    nav .list-menu{
+        flex-direction: column;
+        margin: 0;
+        padding: 60px 0 0 0;
+
+    }
+    nav .list-menu a{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .open-nav{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 30px;
+
+    }
+    .open-nav .line{
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #fdf908;
+        left: 0;
+        border-radius: 5px;
+    }
+    .open-nav .line.line_1{
+        top: 0;
+    }
+    .open-nav .line.line_2{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .open-nav .line.line_3{
+        bottom: 0;
+    }
+}
