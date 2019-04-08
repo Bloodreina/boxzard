@@ -288,7 +288,6 @@ nav .list-menu a:hover::before{
 
 #simulador{
     display: block;
-    /*padding: 50px;*/
     align-content: center;
     text-align: center;
     color: rgb(88, 85, 85);
@@ -298,7 +297,6 @@ nav .list-menu a:hover::before{
     font-family:sans-serif;
     margin-bottom: 40px;
     font-size: 18px;
-    /*float: left;*/
     display: flex;
 }
 
