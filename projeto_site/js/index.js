@@ -24,6 +24,7 @@
         else{
             mensagem.innerHTML= `Adquirindo nosso sistema você economizará : ${subtracaoFormatada} por mês e ${economiaFormatada} por ano.<br> Pagando apenas o valor de ${custoFormatado} por mês .`;
             aaa.classList.add("animation");
+            mensagem.style.display = "block";
             mensagem.style.opacity = 1;
         }
     

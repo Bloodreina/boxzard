@@ -288,7 +288,7 @@ nav .list-menu a:hover::before{
 
 #simulador{
     display: block;
-    padding: 50px;
+    /*padding: 50px;*/
     align-content: center;
     text-align: center;
     color: rgb(88, 85, 85);
@@ -298,7 +298,7 @@ nav .list-menu a:hover::before{
     font-family:sans-serif;
     margin-bottom: 40px;
     font-size: 18px;
-    float: left;
+    /*float: left;*/
     display: flex;
 }
 
@@ -333,10 +333,10 @@ input{
     padding-right: 20px;
     opacity: 0;
     transition: 1s all;
-    box-shadow: 1px 1px 1px 1px  rgb(209, 207, 207);
+    /*box-shadow: 1px 1px 1px 1px  rgb(209, 207, 207);*/
     border-radius: 10px;
-    background-color: #fff;
-
+    display: none;
+    background-color: rgba(22, 18, 18, 0.027);
 }
 
 /*corpo do formulario*/
