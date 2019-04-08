@@ -240,7 +240,7 @@ nav .list-menu a:hover::before{
 }
 
 .imgArduino{
-    background-image: url("../img/arduino-dht11.jpg");
+    background-image: url("../img/imgTemperatura.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -251,7 +251,7 @@ nav .list-menu a:hover::before{
 }
 
 .imgGalpao{
-    background-image: url("../img/galpao.png");
+    background-image: url("../img/imgGalpao.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
