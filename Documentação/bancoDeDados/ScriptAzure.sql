@@ -1,84 +1,65 @@
 create table tbLogin (
-idEmail int primary key identity,
-email varchar (50),
-senha varchar  (10)
+    codEmail int primary key identity,
+    email varchar(30) NOT NULL,
+    senha varchar(30) NOT NULL,
 );
 
-create table tbTemperatura (
-idTemp int primary key identity,
-maxIdeal varchar (5),
-minIdeal varchar (5),
+create table tbAmbienteIdeal (
+    codAmbiente int primary key identity,
+    maxTempIdeal float NOT NULL,
+    minTempIdeal float NOT NULL,
+    maxHumyIdeal float NOT NULL,
+    minHumyIdeal float NOT NULL
 );
 
-create table tbUmidade (
-idUmidade int primary key identity,
-maxIdeal varchar (5),
-minIdeal varchar (5)
+create table tbAmbienteGe (
+    codAmbienteGe int primary key identity,
+    maxTempIdeal float NOT NULL,
+    minTempIdeal float NOT NULL,
+    maxHumyIdeal float NOT NULL,
+    minHumyIdeal float NOT NULL
 );
 
 create table tbGalpao (
-idGalpao int primary key identity,
-tamanho varchar (8),
-tempManu varchar (5),
-umidManu varchar (5),
-qtdArcondicionado varchar (5)
+    codGalpao int primary key identity,
+    tamanho float NOT NULL,
+    qtdArcondicionado int NOT NULL
 );
 
 create table tbSensor (
-idSensor int primary key identity,
-tipo varchar (5),
-fkGalpao int foreign key references tbGalpao (idGalpao)
+    codSensor int primary key identity,
+    tipo varchar(20) NOT NULL,
+    fkGalpao int foreign key references tbGalpao (codGalpao)
 );
 
 create table tbDadosCapturados (
-idDado int primary key identity,
-tempCap varchar (5),
-umidCap varchar (5),
-dataCapturada smalldatetime,
-fkSensor int foreign key references tbSensor (idSensor)
+    codDado int primary key identity,
+    tempCapturada float NOT NULL,
+    humyCapturada float  NOT NULL,
+    dataCapturada smalldatetime  NOT NULL,
+    fkSensor int foreign key references tbSensor (codSensor)
 );
 
-create table produto (
-idProduto int primary key identity,
-nomeProd varchar (30),
-tipoProd varchar (30),
-fkTemperatura int foreign key references tbTemperatura (idTemp)
+create table tbProduto (
+    codProduto int primary key identity,
+    nomeProduto varchar (25) NOT NULL,
+    tipoProduto varchar (20) NOT NULL,
+    fkAmbienteIdeal int foreign key references tbAmbienteIdeal (codAmbiente),
+    fkGalpao int foreign key references tbGalpao (codGalpao)
 );
 
-drop table produto;
-
-select * from produto;
-
-create table produto (
-idProduto int primary key identity,
-nomeProd varchar (30),
-tipoProd varchar (30),
-fkTemperatura int foreign key references tbTemperatura (idTemp),
-FkUmidade int foreign key references tbUmidade (idUmidade),
-fkGalpao int foreign key references tbGalpao (idGalpao)
+create table tbUsuario (
+    codUsuario int primary key identity,
+    cpf_cnpj varchar (20) NOT NULL,
+    nomeCompleto varchar (40) NOT NULL,
+    cep varchar (12) NOT NULL,
+    numero int NOT NULL,
+    complemento varchar (20) NOT NULL,
+    fkEmail int foreign key references tbLogin (codEmail)
 );
 
-create table usuario (
-idUsuario int primary key identity,
-nomeCompleto varchar (40),
-cpf_cnpj varchar (18),
-estado varchar (30),
-cidade varchar (20),
-logradouro varchar (40),
-numero int,
-complemento varchar (20),
-fkEmail int foreign key references tbLogin (idEmail)
+create table tbTelefone (
+    codTelefone int primary key identity,
+    telefone varchar (15) NOT NULL,
+    fkUsuario int foreign key references tbUsuario (codUsuario)
 );
-
-create table user_galpao (
-fkUsuario int foreign key references usuario (idUsuario),
-fkGalpao int foreign key references tbGalpao (idGalpao)
-);
-
-create table telefone (
-idTelefone int primary key identity,
-telefone int,
-fkUsuario int foreign key references usuario (idUsuario)
-);
-
-select * from usuario;
