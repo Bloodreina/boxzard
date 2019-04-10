@@ -1,0 +1,21 @@
+{
+  "name": "real-time",
+  "version": "1.0.0",
+  "description": "App para pegar dados de temperatura do Arduino em tempo real",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ZoeiroVader/zArduino-realTime.git"
+  },
+  "author": "Joao Pedro Soares",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "serialport": "^7.1.4",
+    "socket.io": "^2.2.0"
+  }
+}
