@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solicitar Reparos BoxZard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="alert text-center titulo_pagina" role="alert">
+        Solicite o reparo desejado
+      </div>
+
+    <form class="">
+        
+        <div class="divForm mx-auto"> Escolha o galpão que necessita de reparo
+          <br> <br>
+            <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="01">Galpão 01</option>
+                    <option value="02">Galpão 02</option>
+                    <option value="03">Galpão 03</option>
+                    <option value="03">Galpão 04</option>
+                    <option value="03">Galpão 05</option>
+            </select>
+
+         <br>
+        
+          <label for="exampleFormControlSelect1">Escolha uma opção</label>
+          <br>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option value="">Falha no recebimento de dados do galpão</option>
+            <option value="">Falha na adaptação para temperatura ideal</option>
+            <option value="">Falha na configuração do galpão</option>
+            <option value="">Outros</option>
+          </select> <br>
+
+          <label for="exampleFormControlTextarea1">Sua mensagem</label>
+          <br>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          <button type="submit" class="btn btn-primary button_submit">Enviar</button>
+
+        </div>
+
+      </form>
+
+</body>
+</html>

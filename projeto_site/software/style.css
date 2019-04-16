@@ -1,0 +1,17 @@
+.titulo_pagina {
+    font-family: Arial;
+    background-color: #1E90FF;
+    height: 70px;
+    font-size: 25px;
+}
+
+.divForm {
+    text-align: center;
+    margin-top:90px;
+    font-family: Arial;
+    width: 600px;
+}
+
+.button_submit {
+    margin-top: 30px;
+}
