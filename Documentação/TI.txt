@@ -1,8 +1,0 @@
-HLD - High Level Design
-LLD - Low Level Design
-
-Arquitetura de processos de negócio = Fluxograma
-
-Arquitetura de software;
-
-Arquitetura de infraestrutra;
