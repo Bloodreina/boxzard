@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gráficos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="configs/style.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet"> 
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+    <div class="esconder">
+        
+        <h4>Data: <span id="date"></span></h4>
+        <h4>Temperatura: 
+            <span id="minTemp">25</span>°C
+            /
+        <span id="maxTemp">26</span>°C
+        </h4>
+        <h4>Umidade: 
+            <span id="minUmi">50</span>%
+            /
+            <span id="maxUmi">51</span>%
+        </h4>
+    </div>
+    <div class="tela">
+        <div class="ldEsquerdo">
+            <div class="linha">
+                <div class="chart-container">
+                    <canvas id="temperatura"></canvas>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="contEsquerdo">
+                    <h3>Maxima permitida: 35°C</h3>
+                </div>
+                <div class="contDireito">
+                    <h3>Minima permitida: 30°C</h3>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="contEsquerdo">
+                    <h3>Temperatura média: 33°C</h3>
+                </div>
+                <div class="contDireito">
+                    <h3>Temperatura atual: 33°C</h3>
+                </div>
+            </div>
+        </div>
+        <div class="ldDireito">
+            <div class="chart-container">
+                <canvas id="umidade"></canvas>
+            </div>
+            <div class="linha">
+                <div class="contEsquerdo">
+                    <h3>Maxima permitida: 70%</h3>
+                </div>
+                <div class="contDireito">
+                    <h3>Minima permitida: 50%</h3>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="contEsquerdo">
+                    <h3>Umidade média: 65%</h3>
+                </div>
+                <div class="contDireito">
+                    <h3>Umidade atual: 64%</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+<script src="configs/graficos.js"></script>
+<script src="configs/socket.js"></script>
+<script>
+</script>
+</html>
