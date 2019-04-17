@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+		<script type="text/javascript">
+			
+			// Função de gráfico Gauge
+
+			google.charts.load('current', {'packages':['gauge']});
+      		
+	        google.charts.setOnLoadCallback(drawChart);
+
+	        function drawChart() {
+
+	            var graficoTemperatura = google.visualization.arrayToDataTable([
+	            	['Label', 'Value'],
+	            	['Temperatura', 22]
+	          	]);
+
+	          	var graficoUmidade = google.visualization.arrayToDataTable([
+	            	['Label', 'Value'],
+	            	['Umidade', 55]
+	          	]);
+
+	        	var optionsTemp = {
+	          		width: 600, height: 280,
+	          		greenFrom: 20, greenTo: 45,
+	          		yellowFrom:45, yellowTo: 65,
+	          		redFrom: 65, redTo: 100,
+	          		minorTicks: 7
+	        	};
+
+	        	var optionsHumy = {
+	          		width: 600, height: 280,
+	          		greenFrom: 37, greenTo: 60,
+	          		yellowFrom:60, yellowTo: 72,
+	          		redFrom: 72, redTo: 100,
+	          		minorTicks: 7
+	        	};
+
+	        	var chartTemp = new google.visualization.Gauge(document.getElementById('chart_div'));
+	        	var chartHumy = new google.visualization.Gauge(document.getElementById('chart1_div'));
+
+	        		chartTemp.draw(graficoTemperatura, optionsTemp);
+
+	        		chartHumy.draw(graficoUmidade, optionsHumy);
+
+	        	setInterval(function() {
+	          		graficoTemperatura.setValue(0, 1, 40 + Math.round(60 * Math.random()));
+	          		chartTemp.draw(graficoTemperatura, optionsTemp);
+	        	}, 13000);
+
+	        	setInterval(function() {
+	         		graficoUmidade.setValue(0, 1, 40 + Math.round(60 * Math.random()));
+	          		chartHumy.draw(graficoUmidade, optionsHumy);
+	        	}, 13000);
+	      	}
+
+		</script>
+
+	</head>
+	<body>
+
+		<div class="card">
+			<div id="total" class="row tamanho-row">
+
+				<div class="conteudo1 col-md-12">
+					<h2 class="alert bg-secondary text-light text-center">Acesso Rápido</h2>
+					<div class="row">
+
+						
+
+						<div class="col-md-7">
+
+							<div>
+								<h5>Escolha um galpão para visualizar sua Temperatura e Umidade atual!</h5>	<br>
+							</div>
+					
+							<div>
+								<h5>Selecionar Galpão:</h5>
+								<div>
+									<select class="form-control">
+										<option>Galpão 1</option>
+										<option>Galpão 2</option>
+										<option>Galpão 3</option>
+										<option>Galpão 4</option>
+										<option>Galpão 5</option>
+									</select>
+								</div>
+
+								<br>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div id="chart_div" style="width: 400px; height: 120px;"></div>		
+									</div>
+
+									<div class="col-md-6">
+										<div id="chart1_div" style="width: 400px; height: 120px;"></div>		
+									</div>
+									
+								</div>
+
+							</div>
+							
+						</div>
+
+						<div class="col-md-5 col-info-galpoes-home">
+								
+								<h2 class="alert bg-secondary text-light text-center">Notificações</h2>
+
+								<div class="card">
+									<div class="card-header">
+										<h6>Mudança de temperatura brusca detectada!</h6>
+									</div>
+									<div class="card-body">
+										<p>
+											Foi detectada uma mudança de temperatura brusca no Galpão 2 de 22°C para 37°C as 14:22 do dia 15/04/2019, verificar a causa do ocorrido!
+										</p>
+									</div>
+									<div class="card-footer">
+										<a href="galpoes.html" class="btn btn-secondary">Ver Detalhes</a>
+										<button class="btn btn-success">Resolvido</button>
+										<button class="btn btn-danger">Ignorar</button>
+									</div>
+								</div>
+													
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="nav"></div>
+	</body>
+	
+	</html>
+	<!-- barra-lateral -->
+	<script type="text/javascript">
+		  
+		$(document).ready(function(){
+			$('#nav').load('barraLateral.html');
+		});
+		
+	</script>

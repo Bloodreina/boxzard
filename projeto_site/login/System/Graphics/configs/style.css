@@ -1,0 +1,46 @@
+.chart-container{
+    display: block;
+    width: 500px; 
+    margin: auto;
+    padding: 20px;
+}
+.linha{
+    display: flex;
+}
+.tela{
+    display: flex;
+    margin-left: 20%; 
+}
+.contEsquerdo{
+    padding-left: 10%; 
+}
+.contDireito{
+    padding-left: 6vh;
+}
+.ldEsquerdo{
+    border-right: 2px #CCCCCC solid;
+    margin: 0;
+    padding: 0;
+}
+.ldEsquerdo h3{
+    color: #ad2929;
+}
+.ldDireito h3{
+    color: #299fad;
+}
+h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+h4 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.esconder{
+    display: none;   
+}

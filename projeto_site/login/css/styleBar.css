@@ -1,0 +1,66 @@
+#barraLateral{
+    top: 0 !important;
+    left: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100% !important;
+    width: 200px !important;
+    background:#5b5c5c !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    list-style-type: none !important;
+}
+/*#2f85bb*/
+.box{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-family: "Segoe UI",Tahoma,Geneva,Verdana,sans-serif !important;
+    font-size: 18px !important;
+    padding: 5px !important;
+    display: flex !important;
+    align-items: center !important;
+    height: 50px !important;
+    cursor: pointer !important;
+}
+
+ul li a img{
+    margin-right: 10px !important;
+}
+
+ul li:hover{
+    background: rgb(73, 148, 173) !important;
+
+
+}
+
+#menu{
+    display: none !important;
+    background: #5b5c5c !important;
+    color: #fff !important;
+    font-size: 24px !important;
+    padding: 0.6em !important;
+    cursor: pointer !important;
+    position:absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+
+#sair{
+    position: absolute !important;
+    top: 91% !important;
+}
+
+ 
+@media(max-width:767px),(max-height:500px) {
+    #barraLateral{
+        min-height: 500px !important;
+        top: 65px !important;
+    }
+    #menu{
+        display: block !important; 
+    }
+    #barraLateral{
+        display: none;
+    }
+}
