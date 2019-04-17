@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title> Teste Responsivo </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <div id="menu">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul id="barraLateral">
+            <li><a title="Tela inicial" id="home"><img src="img/home.png" width="32px" height="32px">Olá,
+                    <?php echo $nomeUsuario;?></a></li>
+            <li><a title="Cliente" id="person"><img src="img/persona.png" width="32px" height="32px">Perfil</a></li>
+            <li><a title="Galpões" id="estoque"><img src="img/galpao.png" width="32px" height="32px">Meus galpões</a></li>
+            <li><a title="Gráficos" id="metrica"><img src="img/grafico.png" width="32px" height="32px">Gráficos</a></li>
+            <li><a title="Dashboard" id="dash"><img src="img/dashboard.png"width="32px" height="32px">Dashboard</a></li>
+            <li><a title="Serviços" id="service"><img src="img/settings.png" width="32px" height="32px">Serviços</a></li>
+            <li><a title="Dúvidas" id="reparo"><img src="img/ayuda.png" width="32px" height="32px"> Dúvidas</a></li>
+            <li><a title="Pesquisa" id="buscar"><img src="img/search.png" width="32px" height="32px">Pesquisa</a></li>
+
+            <li><a title="Sair do sistema" id="sair"><img src="img/salir.png" width="32px" height="32px">Sair</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
+
+<!-------------Botão Menu Mobile------------->
+<script type=text/javascript> $("nav div").click(function(){ $("ul").slideToggle(); }); $(window).resize(function(){
+    if($(window).width()>768){
+            $("ul").removeAttr('style');
+        }
+    }
+    );
+</script>
