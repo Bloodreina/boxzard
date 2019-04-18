@@ -22,3 +22,6 @@ function proximo(pag){
         window.location = 'cadastro.html';
     }
 }
+function entrar(){
+    window.location = 'System/home.html';
+}

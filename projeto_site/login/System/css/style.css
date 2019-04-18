@@ -1,6 +1,6 @@
     /* Profile page */
     .container-fluid{
-        padding-left: 15%;
+        padding-left: 250px;
         padding-top: 3%;
     }
 
@@ -71,4 +71,22 @@
     }
     .navGalpao{
         margin: -1px !important;
+    }
+
+    .selecionar{
+        display: flex;
+    }
+    body{
+        background-color: #e4e4e491 !important;
+    }
+    /* #main{
+        margin: auto;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        margin-left: 50%;
+        left: -334.4px;
+    } */
+    label{
+        font-weight: bolder;
     }

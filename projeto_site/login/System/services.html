@@ -25,31 +25,26 @@
     <!--div feita para editar todo o corpo do formulario -->
     <div id="box1">
 
-        <div id="title-Services" class="card text-white bg-secondary my-5 py- text-center">
-            <div class="card-body">
-                <p class="text-white m-0">
-                    <h2>Serviços</h2>
-                </p>
-            </div>
-        </div>
+
         <div id="main" class="container-fluid">
             <h3 class="page-header">Cadastro de Galpão</h3>
-            <form action="index.html">
-
+            <hr />
+            <form>
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="campo1">Nome do Galpão</label>
                         <input type="text" class="form-control" id="nomePessoa">
                     </div>
-
-                 
+                    <div class="form-group col-md-3">
+                        <label for="campo2">CEP</label>
+                        <input type="text" class="form-control" id="campo3">
+                    </div>
                 </div>
-                <div class="row">                          
-                </div>
+                <!-- <div class="row">                          
+                </div> -->
 
                 <div class="row">
-
-                    <div class="form-group col-md-10">
+                    <div class="form-group col-md-5">
                         <label for="inputCity">Endereço do galpão</label>
                         <input type="text" class="form-control" id="inputCity" placeholder="Avenida, Rua...">
                     </div>
@@ -59,18 +54,15 @@
                     </div>
 
 
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-2">
                         <label for="campo1">Complemento</label>
                         <input type="text" class="form-control" id="campo1">
                     </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="campo2">CEP</label>
-                        <input type="text" class="form-control" id="campo3">
-                    </div>
+
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-2">
                         <label for="campo1">N° de ar-condicionado</label>
                         <input type="text" class="form-control" id="campo1">
                     </div>
@@ -78,10 +70,11 @@
                 <hr />
                 <!--area dos botoes-->
                 <div id="actions" class="row">
-                    <div class="col-md-12">
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Adicionar Galpão</button>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                            <a href="index.html" class="btn btn-default">Cancelar</a>
+                        </div>
                     </div>
-                </div>
             </form>
         </div>
         <div id="nav"></div>

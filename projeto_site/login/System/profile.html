@@ -18,94 +18,66 @@
     <body>
 
         <div id="main" class="container-fluid">
-            <h3 class="page-header">Cadastro de administrador</h3>
-            <form action="index.html">
+            <h3 class="page-header">Editar perfil</h3>
+            <hr />
+            <form>
 
                 <!--Primeira linha do formulario com 2 campos-->
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="campo1">Nome</label>
+                        <label for="campo1">Nome Completo</label>
                         <input type="text" class="form-control" id="nomePessoa">
                     </div>
-                    <div class="form-group col-md-5">
-                        <label for="campo2">Sobrenome</label>
-                        <input type="text" class="form-control" id="SobrenomePessoa">
-                    </div>
-                </div>                
-                
-                <!--segunda linha do formulario com 3 campos-->
-                <div class="row">
-                            <!--telefone que não funciona   
-                            <div class="form-group col-md-3">
-                            <label for="telefone">Telefone</label>
-                            <input type="text" id="telefon" class="form-control">
-                        
-                            <button onclick="aparecer()" class="telefone">+</button>
-                        
-                            <select id="telefoness">
-                
-                            </select>
-                            <br>
-                            </div-->
-                    <div class="form-group col-md-3">
-                        <label for="campo3">Telefone para contato</label>
-                        <input type="text" class="form-control" id="campo3" placeholder="Telefone principal">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="campo3"><br></label>
-                        <input type="text" class="form-control" id="campo3"placeholder="Telefone 2">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="campo3"><br></label>
-                        <input type="text" class="form-control" id="campo3" placeholder="Telefone 3">
-                    </div>                              
-                </div>
 
+                    <div class="form-group col-md-4">
+                        <label for="campo1">Email</label>
+                        <input type="text" class="form-control" id="nomePessoa">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-2">
+                        <label for="campo2">Senha</label>
+                        <input type="text" class="form-control" id="campo3">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputCity">Confirma senha</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="telefone">Telefone</label>
+                    <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary" type="button" class="btn btn-sucess">+</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="telefone">Adicionados</label>
+                            <select id="telefones" class="form-control">
+                        </select>
+                    </div>
+                </div>
                 <!--terceira linha do formulario com 2 campos -->
                 <div class="row">
-                    <div class="form-group col-md-9">
+                    <div class="form-group col-md-2">
+                        <label for="campo2">CEP</label>
+                        <input type="text" class="form-control" id="campo3">
+                    </div>
+                    <div class="form-group col-md-4">
                         <label for="inputCity">Endereço</label>
                         <input type="text" class="form-control" id="inputCity" placeholder="Avenida, Rua...">
                     </div>
+
                     <div class="form-group col-md-2">
                         <label for="inputZip">Numero</label>
                         <input type="text" class="form-control" id="inputZip">
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-1">
                         <label for="campo1">Complemento</label>
                         <input type="text" class="form-control" id="campo1">
                     </div>
-                    <div class="form-group col-md-5">
-                        <label for="campo2">CEP</label>
-                        <input type="text" class="form-control" id="campo3">
-                    </div>
                 </div> 
-
-                <!-- Area para Informações da empresa -->
-                <h3 class="page-header">Informações da empresa</h3>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label for="campo1">Nome</label>
-                        <input type="text" class="form-control" id="campo1">
-                    </div>
-                                
-                    <div class="form-group col-md-5">
-                        <label for="campo2">Telefone Principal</label>
-                        <input type="text" class="form-control" id="campo3">
-                    </div>
-                                
-                    <div class="form-group col-md-8">
-                        <label for="campo3">Endereço</label>
-                        <input type="text" class="form-control" id="campo3">
-                    </div>
-
-                    <div class="form-group col-md-2">
-                        <label for="campo3">CEP</label>
-                        <input type="text" class="form-control" id="campo3">
-                    </div>
-                                                                            
-                </div>
-
                 <hr />
                 
                 <!--area dos botoes-->
