@@ -65,78 +65,78 @@
 		</script>
 
 	</head>
-	<body class="corpo">
-		<div class="row tamanho-row">
-			<div class="col-md-2">				
-			</div>
-			<div class="conteudo1 col-md-9">	
-				<h3 class="page-header">Bem vindo</h3>
-				<hr />
-				<div class="row">
+	<body>
 
-					<div class="col-md-7">
+		<div class="card">
+			<div id="total" class="row tamanho-row">
 
-						<div>
-							<h5>Escolha um galpão para visualizar sua Temperatura e Umidade atual!</h5>	<br>
-						</div>
-				
-						<div>
-							<h5>Selecionar Galpão:</h5>
-							<div class="selecionar">
-								<select class="custom-select">
-									<option>Galpão 1</option>
-									<option>Galpão 2</option>
-									<option>Galpão 3</option>
-									<option>Galpão 4</option>
-									<option>Galpão 5</option>
-								</select>
-								<button  type="button" class="btn btn-success">+</button>
-							</div>
+				<div class="conteudo1 col-md-12">
+					<h2 class="alert bg-secondary text-light text-center">Acesso Rápido</h2>
+					<div class="row">
 
-							<br>
-
-							<div class="row">
-								<div class="col-md-6 colunaGauge">
-									<div id="chart_div" style="width: 400px; height: 120px;"></div>		
-								</div>
-
-								<div class="col-md-6">
-									<div id="chart1_div" style="width: 400px; height: 120px;"></div>		
-								</div>
-								
-							</div>
-
-						</div>
 						
-					</div>
 
-					<div class="col-md-5 col-info-galpoes-home">
-							
-							<h2 class="alert bg-secondary text-light text-center">Notificações</h2>
+						<div class="col-md-7">
 
-							<div class="card">
-								<div class="card-header">
-									<h6>Mudança de temperatura brusca detectada!</h6>
-								</div>
-								<div class="card-body">
-									<p>
-										Foi detectada uma mudança de temperatura brusca no Galpão 2 de 22°C para 37°C as 14:22 do dia 15/04/2019, verificar a causa do ocorrido!
-									</p>
-								</div>
-								<div class="card-footer">
-									<a href="galpoes.html" class="btn btn-secondary">Ver Detalhes</a>
-									<button class="btn btn-success">Resolvido</button>
-									<button class="btn btn-danger">Ignorar</button>
-								</div>
+							<div>
+								<h5>Escolha um galpão para visualizar sua Temperatura e Umidade atual!</h5>	<br>
 							</div>
-												
+					
+							<div>
+								<h5>Selecionar Galpão:</h5>
+								<div>
+									<select class="form-control">
+										<option>Galpão 1</option>
+										<option>Galpão 2</option>
+										<option>Galpão 3</option>
+										<option>Galpão 4</option>
+										<option>Galpão 5</option>
+									</select>
+								</div>
+
+								<br>
+
+								<div class="row">
+									<div class="col-md-6">
+										<div id="chart_div" style="width: 400px; height: 120px;"></div>		
+									</div>
+
+									<div class="col-md-6">
+										<div id="chart1_div" style="width: 400px; height: 120px;"></div>		
+									</div>
+									
+								</div>
+
+							</div>
+							
 						</div>
+
+						<div class="col-md-5 col-info-galpoes-home">
+								
+								<h2 class="alert bg-secondary text-light text-center">Notificações</h2>
+
+								<div class="card">
+									<div class="card-header">
+										<h6>Mudança de temperatura brusca detectada!</h6>
+									</div>
+									<div class="card-body">
+										<p>
+											Foi detectada uma mudança de temperatura brusca no Galpão 2 de 22°C para 37°C as 14:22 do dia 15/04/2019, verificar a causa do ocorrido!
+										</p>
+									</div>
+									<div class="card-footer">
+										<a href="galpoes.html" class="btn btn-secondary">Ver Detalhes</a>
+										<button class="btn btn-success">Resolvido</button>
+										<button class="btn btn-danger">Ignorar</button>
+									</div>
+								</div>
+													
+							</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
 		<div id="nav"></div>
-
 	</body>
 	
 	</html>

@@ -8,135 +8,133 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	</head>
-	<body class="corpo">
+	<body>
 
-		<div class="row tamanho-row">
-			<div class="col-md-2">
-				
-			</div>
-			
-			<div class="conteudo1 col-md-9">
-					<h3 class="page-header">Gerenciar Galpões</h3>
-					<hr />
-			
-				<div class="row">
+		<div class="card">
+			<div class="row tamanho-row">
+				<div class="col-md-2">
+					<section id="nav"></section>
+				</div>
 
-					<div class="col-md-8">
+				<div class="conteudo1 col-md-9">
+					<h2 class="alert bg-secondary text-light text-center">Gerenciar Meus Galpões</h2>
+					<div class="row">
 
-						<div>
-							<h5>Quantidade de galpões que você gerencia: <span>10</span></h5>	<br>
-						</div>
-				
-						<div>
-							
-							<div class="row">
-									<div class="form-group col-md-12">
-
-											<h5>Selecionar Galpão:</h5>
-										<div class="input-group mb-12">
-											<select class="custom-select">
-												<option>Selecione um galpão</option>
-												<option>Galpão 1</option>
-												<option>Galpão 2</option>
-												<option>Galpão 3</option>
-												<option>Galpão 4</option>
-												<option>Galpão 5</option>
-											</select>
-												<div class="input-group-append">
-												  <button class="btn btn-outline-secondary" type="button" class="btn btn-sucess">+</button>
-												</div>
-											  </div>
-										</div>
-
-							</div>
-							
-
-							<br>
-
-							<div>
-								<table class="table table-striped table-hover">
-									<thead class="bg-secondary text-white">
-										<tr>
-											<th scope="col">Produto Armazenado</th>
-											<th scope="col">Temp. Atual</th>
-											<th scope="col">Humi. Atual</th>
-											<th scope="col">Editar</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Maças</td>
-											<td>22° C</td>
-											<td>53%</td>
-											<td><a href="" class="card-link">Editar</a></td>
-										</tr>
-										<tr>
-											<td>Bananas</td>
-											<td>26° C</td>
-											<td>49%</td>
-											<td><a href="" class="card-link">Editar</a></td>
-										</tr>
-										<tr>
-											<td>Trigo</td>
-											<td>28° C</td>
-											<td>38%</td>
-											<td><a href="" class="card-link">Editar</a></td>
-										</tr>
-										<tr>
-											<td>Remédios</td>
-											<td>15° C</td>
-											<td>30%</td>
-											<td><a href="" class="card-link">Editar</a></td>
-										</tr>
-										<tr>
-											<td>Remédios</td>
-											<td>11° C</td>
-											<td>32%</td>
-											<td><a href="" class="card-link">Editar</a></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-4 col-info-galpoes">
 						
-						<div class="info-right">
-							<div>
-								<h5>Galpão selecionado:</h5>
-								<p>Galpão 1</p>
-							</div>
+
+						<div class="col-md-8">
 
 							<div>
-								<h5>Endereço do Galpão:</h5>
-								<p>Lado leste, sessão 3</p>
+								<h5>Quantidade de galpões que você gerencia: <span>10</span></h5>	<br>
 							</div>
-
+					
 							<div>
-								<h5>Quantidade de ar condicionado:</h5>
-								<p>22</p>
-							</div>
+								<h5>Selecionar Galpão:</h5>
+								<div class="row">
+									<div class="col-md-10">
+										<select class="form-control">
+											<option>Selecione um galpão</option>
+											<option>Galpão 1</option>
+											<option>Galpão 2</option>
+											<option>Galpão 3</option>
+											<option>Galpão 4</option>
+											<option>Galpão 5</option>
+										</select>
+									</div>
 
-							<div>
-								<h5>Quantidade de sensores instalados:</h5>
-								<p>22</p>
-							</div>
+									<div class="col-md-2">
+										<a href="#" class="btn btn-success">+</a>
+									</div>	
+								</div>
+								
 
-							<div>
-								<h5>Serviço atual:</h5>
-								<p>Controle inteligente de temperatura e umidade do ambiente.</p>
-							</div>
+								<br>
 
-							<a href="#" class="card-link" data-toggle="modal" data-target="#modalEditar">Editar Galpão</a>
-							<a href="" class="card-link">Cancelar Serviço</a>
+								<div>
+									<table class="table table-striped table-hover">
+										<thead class="bg-secondary text-white">
+											<tr>
+												<th scope="col">Produto Armazenado</th>
+												<th scope="col">Temp. Atual</th>
+												<th scope="col">Humi. Atual</th>
+												<th scope="col">Editar</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Maças</td>
+												<td>22° C</td>
+												<td>53%</td>
+												<td><a href="" class="card-link">Editar</a></td>
+											</tr>
+											<tr>
+												<td>Bananas</td>
+												<td>26° C</td>
+												<td>49%</td>
+												<td><a href="" class="card-link">Editar</a></td>
+											</tr>
+											<tr>
+												<td>Trigo</td>
+												<td>28° C</td>
+												<td>38%</td>
+												<td><a href="" class="card-link">Editar</a></td>
+											</tr>
+											<tr>
+												<td>Remédios</td>
+												<td>15° C</td>
+												<td>30%</td>
+												<td><a href="" class="card-link">Editar</a></td>
+											</tr>
+											<tr>
+												<td>Remédios</td>
+												<td>11° C</td>
+												<td>32%</td>
+												<td><a href="" class="card-link">Editar</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 
 						</div>
-											
+						<div class="col-md-4 col-info-galpoes">
+							
+							<div class="info-right">
+								<div>
+									<h5>Galpão selecionado:</h5>
+									<p>Galpão 1</p>
+								</div>
+
+								<div>
+									<h5>Endereço do Galpão:</h5>
+									<p>Lado leste, sessão 3</p>
+								</div>
+
+								<div>
+									<h5>Quantidade de ar condicionado:</h5>
+									<p>22</p>
+								</div>
+
+								<div>
+									<h5>Quantidade de sensores instalados:</h5>
+									<p>22</p>
+								</div>
+
+								<div>
+									<h5>Serviço atual:</h5>
+									<p>Controle inteligente de temperatura e umidade do ambiente.</p>
+								</div>
+
+								<a href="#" class="card-link" data-toggle="modal" data-target="#modalEditar">Editar Galpão</a>
+								<a href="" class="card-link">Cancelar Serviço</a>
+
+							</div>
+												
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>		
 
 		<div class="modal fade" id="modalEditar" tabindex="-1" role="dialog">
 			<div class="modal-dialog modal-lg" role="document">
@@ -160,7 +158,6 @@
 			</div>
 		</div>
 
-		<div id="nav"></div>
 
 		<!-- Optional JavaScript -->
 	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->

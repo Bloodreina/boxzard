@@ -13,83 +13,70 @@
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
             crossorigin="anonymous">
-        <title>Alterar cadastro</title>
+        <title>Meus dados</title>
     </head>
     <body>
 
+           
         <div id="main" class="container-fluid">
-            <h3 class="page-header">Editar perfil</h3>
-            <hr />
-            <form>
+            <form action="index.html">
 
-                <!--Primeira linha do formulario com 2 campos-->
+                <h3 class="page-header"> Meus dados</h3>
+
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="campo1">Nome Completo</label>
+                        <b>Nome Completo</b>
                         <input type="text" class="form-control" id="nomePessoa">
                     </div>
+                </div>                
+                
+                <div class="row">                    
+                    <div class="form-group col-md-3">
+                         <b>Telefone para contato</b>
+                        <input type="text" class="form-control" id="campo3" placeholder="Telefone principal">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="campo3"></label>
+                        <input type="text" class="form-control" id="campo3"placeholder="Telefone 2">
+                    </div>                              
+                </div>
 
-                    <div class="form-group col-md-4">
-                        <label for="campo1">Email</label>
-                        <input type="text" class="form-control" id="nomePessoa">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-2">
-                        <label for="campo2">Senha</label>
-                        <input type="text" class="form-control" id="campo3">
-                    </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputCity">Confirma senha</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="">
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="telefone">Telefone</label>
-                    <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                              <button class="btn btn-outline-secondary" type="button" class="btn btn-sucess">+</button>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="form-group col-md-3">
-                        <label for="telefone">Adicionados</label>
-                            <select id="telefones" class="form-control">
-                        </select>
-                    </div>
-                </div>
                 <!--terceira linha do formulario com 2 campos -->
                 <div class="row">
-                    <div class="form-group col-md-2">
-                        <label for="campo2">CEP</label>
-                        <input type="text" class="form-control" id="campo3">
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputCity">Endereço</label>
+                    <div class="form-group col-md-6">
+                        <b> Endereço</b>
                         <input type="text" class="form-control" id="inputCity" placeholder="Avenida, Rua...">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-2">
+                        <b>CEP</b>
+                        <input type="text" class="form-control" id="campo3">
                     </div>
 
                     <div class="form-group col-md-2">
-                        <label for="inputZip">Numero</label>
+                        <b>Numero</b>
                         <input type="text" class="form-control" id="inputZip">
                     </div>
-                    <div class="form-group col-md-1">
-                        <label for="campo1">Complemento</label>
+
+                    <div class="form-group col-md-2">
+                        <b>Complemento</b>
                         <input type="text" class="form-control" id="campo1">
                     </div>
-                </div> 
-                <hr />
-                
+                </div>
+                                
                 <!--area dos botoes-->
                 <div id="actions" class="row">
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-primary col-md-12">Salvar</button>
                         <a href="index.html" class="btn btn-default">Cancelar</a>
                     </div>
                 </div>
+
             </form>
         </div>
-        <div id="nav"></div>
+        
     </body>
 </html>
 
