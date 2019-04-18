@@ -1,45 +1,92 @@
-/* Profile page */
-.container-fluid{
-    padding-left: 15%;
-    padding-top: 3%;
-}
+    /* Profile page */
+    .container-fluid{
+        padding-left: 250px;
+        padding-top: 3%;
+    }
 
-body{
-    line-height: 3.089 !important;
-}
-.row{
-    margin: -1px !important;
-}
-#title-Services{
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-#geral,#total{
-    margin-left: 250px !important;
-}
+    body{
+        /*line-height: 3.089 !important;*/
+    }
+    .row{
+        /*margin: -1px !important;*/
+    }
+    #title-Services{
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    #geral,#total{
+        margin-left: 250px !important;
+    }
 
-#total{
-    line-height: 7 !important;
-    overflow: hidden !important;
-}
-.titulo_pagina {
-    font-family: Arial;
-    background-color: #1E90FF;
-    height: 70px;
-    font-size: 25px;
-}
+    #total{
+        line-height: 7 !important;
+        overflow: hidden !important;
+    }
+    .titulo_pagina {
+        font-family: Arial;
+        background-color: #1E90FF;
+        height: 70px;
+        font-size: 25px;
+    }
 
-.divForm {
-    text-align: center;
-    margin-top:90px;
-    font-family: Arial;
-    width: 600px;
-}
+    .divForm {
+        text-align: center;
+        margin-top:90px;
+        font-family: Arial;
+        width: 600px;
+    }
 
-.button_submit {
-    margin-top: 30px;
-}
+    .button_submit {
+        margin-top: 30px;
+    }
 
-h3{
-    padding-left: 1%;
-};
+    /*CSS da página home*/
+
+    .corpo{
+        overflow: hidden;
+    }
+
+    .conteudo1{
+        margin-top: 3em;
+        /*margin-left: 1em;*/
+    }
+
+    .col-info-galpoes{
+        border-left: solid 4px;
+        border-color: #6C757E;
+    }
+
+    .col-info-galpoes-home{
+        border-left: solid 4px;
+        border-color: #6C757E;
+        height: 500px;
+    }
+
+    .info-right{
+        margin-top: 1em;
+    }
+
+    .tamanho-row{
+        height: 630px;
+    }
+    .navGalpao{
+        margin: -1px !important;
+    }
+
+    .selecionar{
+        display: flex;
+    }
+    body{
+        background-color: #e4e4e491 !important;
+    }
+    /* #main{
+        margin: auto;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        margin-left: 50%;
+        left: -334.4px;
+    } */
+    label{
+        font-weight: bolder;
+    }
