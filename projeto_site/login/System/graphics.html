@@ -5,11 +5,14 @@
     <title>Gráficos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Graphics/configs/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet"> 
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
 </head>
-<body>
+<body class="corpo">
     <div class="esconder">
         
         <h4>Data: <span id="date"></span></h4>
@@ -24,66 +27,123 @@
             <span id="maxUmi">51</span>%
         </h4>
     </div>
-    <div class="tela">
-        <div class="ldEsquerdo">
-            <div class="linha">
-                <div class="chart-container">
-                    <canvas id="temperatura"></canvas>
-                </div>
-            </div>
-            <div class="linha">
-                <div class="contEsquerdo">
-                    <h3>Maxima permitida: 35°C</h3>
-                </div>
-                <div class="contDireito">
-                    <h3>Minima permitida: 30°C</h3>
-                </div>
-            </div>
-            <div class="linha">
-                <div class="contEsquerdo">
-                    <h3>Temperatura média: 33°C</h3>
-                </div>
-                <div class="contDireito">
-                    <h3>Temperatura atual: 33°C</h3>
-                </div>
-            </div>
+    <div class="row tamanho-row">
+
+        <div class="col-md-2">				
         </div>
-        <div class="ldDireito">
-            <div class="chart-container">
-                <canvas id="umidade"></canvas>
-            </div>
-            <div class="linha">
-                <div class="contEsquerdo">
-                    <h3>Maxima permitida: 70%</h3>
+        <div class="conteudo1 col-md-9">	
+            <h3 class="page-header">Variação de Temperatura</h3>
+            <hr />
+            <div class="tela">
+                <div class="ldEsquerdo">
+                    <div class="linha">
+                        <div class="chart-container">
+                            <canvas id="temperatura"></canvas>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="contEsquerdo">
+                            <h3>Maxima permitida: 35°C</h3>
+                        </div>
+                        <div class="contDireito">
+                            <h3>Minima permitida: 30°C</h3>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="contEsquerdo">
+                            <h3>Temperatura média: 33°C</h3>
+                        </div>
+                        <div class="contDireito">
+                            <h3>Temperatura atual: 33°C</h3>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Temperatura</th>
+                                    <th scope="col">Hora</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">30ºC</th>
+                                    <td>12:02:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30ºC</th>
+                                    <td>12:01:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30ºC</th>
+                                    <td>12:00:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="contDireito">
-                    <h3>Minima permitida: 50%</h3>
-                </div>
-            </div>
-            <div class="linha">
-                <div class="contEsquerdo">
-                    <h3>Umidade média: 65%</h3>
-                </div>
-                <div class="contDireito">
-                    <h3>Umidade atual: 64%</h3>
+                <div class="ldDireito">
+                    <div class="chart-container">
+                        <canvas id="umidade"></canvas>
+                    </div>
+                    <div class="linha">
+                        <div class="contEsquerdo">
+                            <h3>Maxima permitida: 70%</h3>
+                        </div>
+                        <div class="contDireito">
+                            <h3>Minima permitida: 50%</h3>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="contEsquerdo">
+                            <h3>Umidade média: 65%</h3>
+                        </div>
+                        <div class="contDireito">
+                            <h3>Umidade atual: 64%</h3>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Umidade</th>
+                                    <th scope="col">Hora</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">64%</th>
+                                    <td>12:02:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">65%</th>
+                                    <td>12:01:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">65%</th>
+                                    <td>12:00:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="nav"></div>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
-<script src="Graphics/configs/graficos.js"></script>
-<script src="Graphics/configs/socket.js"></script>
-<script>
-</script>
+        <div id="nav"></div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="Graphics/configs/graficos.js"></script>
+    <script src="Graphics/configs/socket.js"></script>
+    <script>
+    </script>
 </html>
 <!-- barra-lateral -->
 <script type="text/javascript">
 			
-    $(document).ready(function(){
-        $('#nav').load('barraLateral.html');
-    });
+            $(document).ready(function(){
+                $('#nav').load('barraLateral.html');
+            });
     
 </script>

@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../css/styleBar.css">
+        <script type="text/javascript" src="js/script.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -25,57 +26,60 @@
                 <!--Primeira linha do formulario com 2 campos-->
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="campo1">Nome Completo</label>
-                        <input type="text" class="form-control" id="nomePessoa">
+                        <label for="nomePessoa">Nome Completo</label>
+                        <input type="text" class="form-control" placeholder="Digite seu nome completo" id="nomePessoa" required>
                     </div>
 
                     <div class="form-group col-md-4">
-                        <label for="campo1">Email</label>
-                        <input type="text" class="form-control" id="nomePessoa">
+                        <label for="emailPessoa">Email</label>
+                        <input type="text" class="form-control" id="emailPessoa" placeholder="Digite seu email" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-2">
-                        <label for="campo2">Senha</label>
-                        <input type="text" class="form-control" id="campo3">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Digite a senha" required>
                     </div>
                     <div class="form-group col-md-2">
-                        <label for="inputCity">Confirma senha</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="">
+                        <label for="confirmarSenha">Confirma senha</label>
+                        <input type="text" class="form-control" id="confirmarSenha" placeholder="Confirme a senha" required>
                     </div>
                     <div class="form-group col-md-3">
                         <label for="telefone">Telefone</label>
                     <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Telefone" aria-label="Telefone" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control" placeholder="Digite o telefone" id="telefone" aria-label="Telefone" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                              <button class="btn btn-outline-secondary" type="button" class="btn btn-sucess">+</button>
+                              <button class="btn btn-outline-secondary" type="button" class="btn btn-sucess" onclick="adicionarTelefone(telefone.value, 'telefones')">+</button>
                             </div>
                           </div>
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="telefone">Adicionados</label>
-                            <select id="telefones" class="form-control">
+                        <label for="telefones">Adicionados</label>
+                            <select id="telefones" class="form-control" required>
+                                <option value="">
+                                    Telefones Adicionados
+                                </option>
                         </select>
                     </div>
                 </div>
                 <!--terceira linha do formulario com 2 campos -->
                 <div class="row">
                     <div class="form-group col-md-2">
-                        <label for="campo2">CEP</label>
-                        <input type="text" class="form-control" id="campo3">
+                        <label for="cep">CEP</label>
+                        <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP" required>
                     </div>
                     <div class="form-group col-md-4">
                         <label for="inputCity">Endereço</label>
-                        <input type="text" class="form-control" id="inputCity" placeholder="Avenida, Rua...">
+                        <input type="text" class="form-control" id="inputCity" placeholder="Avenida, Rua..." disabled>
                     </div>
 
                     <div class="form-group col-md-2">
-                        <label for="inputZip">Numero</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <label for="numCasa">Numero</label>
+                        <input type="text" class="form-control" id="numCasa" placeholder="Numero da casa" required>
                     </div>
                     <div class="form-group col-md-1">
                         <label for="campo1">Complemento</label>
-                        <input type="text" class="form-control" id="campo1">
+                        <input type="text" class="form-control" id="campo1" placeholder="A" required>
                     </div>
                 </div> 
                 <hr />
@@ -84,7 +88,7 @@
                 <div id="actions" class="row">
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-primary">Salvar</button>
-                        <a href="index.html" class="btn btn-default">Cancelar</a>
+                        <a href="home.html" class="btn btn-default">Cancelar</a>
                     </div>
                 </div>
             </form>
