@@ -9,10 +9,25 @@
 }
 .tela{
     display: flex;
-    margin-left: 20%; 
+    margin-left: 5%;
 }
 .contEsquerdo{
     padding-left: 10%; 
+}
+.linha h3{
+    font-size: large;
+}
+
+body{
+    background-color: #e4e4e491 !important;
+}
+
+.table{
+    margin-top: 50px;
+    color: #ad2929
+}
+.ldDireito .table{
+    color: #299fad;
 }
 .contDireito{
     padding-left: 6vh;
