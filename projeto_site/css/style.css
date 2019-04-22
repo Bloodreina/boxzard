@@ -300,8 +300,9 @@ nav .list-menu a:hover::before{
     display: block;
     align-content: center;
     text-align: center;
-    color: rgb(88, 85, 85);
-    background-image: linear-gradient(to right, rgba(22, 18, 18, 0.027),#0074f880);
+    color: #2e2e2e;
+    background-color: #299fad;
+    /*background-image: linear-gradient(to right, rgba(22, 18, 18, 0.027),#0074f880);*/
     height:470px;
     width: 100%;
     font-family:sans-serif;
@@ -333,7 +334,7 @@ input{
     height:300px;
     width: 550px;
     float: right;
-    margin: 30px;
+    /*margin: 30px;*/
     margin-top: 100px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 23px;
