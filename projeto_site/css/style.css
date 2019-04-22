@@ -547,6 +547,7 @@ form .submit:hover{
 .btn-produto, .botaoConfig{
     cursor: pointer;
     background-color:rgb(0, 0, 0);
+    border-radius:20px;
 }
 /* responsivo menu*/
 @media (max-width:620px){
