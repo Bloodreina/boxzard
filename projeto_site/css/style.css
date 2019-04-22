@@ -230,7 +230,7 @@ nav .list-menu a:hover::before{
     border: solid #00000059 5px;
     border-radius: 50px;
     padding: 8px;
-    margin-top: -2%;
+    margin-top: -2%; 
     font-size: 15px;
 }
 
