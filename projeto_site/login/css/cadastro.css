@@ -11,7 +11,7 @@ html{
     -moz-background-size: cover; 
     -ms-background-size: cover; 
     -o-background-size: cover;
-    
+    overflow: hidden;
 }
 
 img{
@@ -91,7 +91,7 @@ a{
     height: 60px;
     padding: 10px;
     text-align: center;
-    background: #7f5a40;
+    background: #00000083;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     
@@ -101,7 +101,7 @@ a{
     width: 50%;
     text-align: center;
     border-bottom-right-radius: 50px;
-    background:#7f5a40;
+    background:#00000083;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #ffffff96;
@@ -123,16 +123,15 @@ a{
     padding: 5% 0 7.5% 0;
     text-align: center;
     border-bottom-left-radius: 50px;
-    background: #7f5a40;
+    background: #00000083;
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: #ffffff91;
 }
 
 #rodape{
-    height: 50px;
+    height: 72px;
     padding: 0px;
-    background: rgba(0, 128, 128, 0.384);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     margin-bottom: 0%;

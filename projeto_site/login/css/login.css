@@ -88,7 +88,7 @@ img{
     height: 12%;
     padding: 10px;
     text-align: center;
-    background: #7f5a40;
+    background: #00000083;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     
@@ -98,7 +98,7 @@ img{
     width: 50%;
     text-align: center;
     border-bottom-right-radius: 50px;
-    background:#7f5a40;
+    background:#00000083;
     border-left-style: solid;
     border-left-width: 1px;
     border-left-color: #ffffff96;
@@ -121,7 +121,7 @@ img{
     padding: 5% 0 7.5% 0;
     text-align: center;
     border-bottom-left-radius: 50px;
-    background: #7f5a40;
+    background: #00000083;
     border-right-style: solid;
     border-right-width: 1px;
     border-right-color: #ffffff91;
