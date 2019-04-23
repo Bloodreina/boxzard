@@ -12,29 +12,36 @@
 
 <body>
     <script>
-        var pagina=0;
+        var pagina = 0;
     </script>
     <!-- <img src="logo" alt=""> -->
     <header>
+<<<<<<< HEAD
         <img src="../img/Logo.png" alt="logo" >
+=======
+        <img src="../img/Logo.png" alt="logo">
+>>>>>>> 6b021f81aa2ed3ad42cd4de24255145cfea81317
         <form action="" method="post">
             <div id="topo"></div>
+            <div id="ReturnLogin" onclick="irLogin()" style="display: none;">
+                <a id="tornarLogin"></a>
+            </div>
             <h2 id="titulo">Cadastro</h2>
             <div id="conteudo">
-            
+
                 <input type="text" placeholder="nome">
                 <input type="text" placeholder="Sobrenome">
                 <input type="text" placeholder="e-mail">
                 <input type="password" placeholder="senha">
                 <input type="password" placeholder="confirmar senha">
-                </div>
-                <div id="conteudo2">
+            </div>
+            <div id="conteudo2">
                 <input type="number" placeholder="CPF/CNPJ">
                 <input type="number" placeholder="CEP">
                 <input type="number" placeholder="Numero da casa">
                 <input type="text" placeholder="Complemento ">
-                </div>
-                <div id="conteudo3">
+            </div>
+            <div id="conteudo3">
                 <input type="number" placeholder="tamanho (m2)">
                 <input type="text" placeholder="quantidade de ar-condicionado">
                 <input type="text" placeholder="potência">
@@ -42,7 +49,7 @@
             <div id="rodape">
                 <div id="lEsquerdo" onclick="proximo(--pagina)">
                     <a id="aaa">
-                        Login
+                       Voltar
                     </a>
                 </div>
                 <div id="lDireito" onclick="proximo(++pagina)">
@@ -50,7 +57,7 @@
                         Proximo
                     </a>
                 </div>
-                
+
             </div>
             </div>
         </form>

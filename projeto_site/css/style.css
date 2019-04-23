@@ -151,15 +151,16 @@ nav .list-menu a:hover::before{
     display: inline-block;
     transition: all 650ms;
     border-radius: 3px;
-    text-transform: uppercase;    /* transformar texto em letra maiuscula */
+        /* transformar texto em letra maiuscula */
     
 }
 
 /* Botão "Saiba mais" */
 .main-btn{
-    font-size: 1.5rem;
+    font-family:sans-serif;
+    font-size: 1.5r;
     border: 2px solid #ffffff;
-    padding: 2rem 2.5rem;
+    padding: 1.5rem 2.5rem;
     letter-spacing: 3px;
     margin-right: -3px;
     position: relative;
@@ -195,16 +196,26 @@ nav .list-menu a:hover::before{
     color: #2e2e2e;
     justify-content: center;
     height: 380px;
+    margin-top: -4%;
 }
 
 .conteudo{
     display: block;
-    margin: 0 25%;
+    margin: 0 13%;
     text-align: center;
+    margin-top: -2%;
+}
+.d{
+    font-size: 18px;
 }
 
 .conteudo p{
+<<<<<<< HEAD
     font-size: 16px;
+=======
+    
+    font-size: 20px;
+>>>>>>> 6b021f81aa2ed3ad42cd4de24255145cfea81317
     /* font-family: Merriweather,"Helvetica Neue",Arial,sans-serif; */
 }
 
@@ -223,7 +234,9 @@ nav .list-menu a:hover::before{
     margin-left: 100px;
     border: solid #00000059 5px;
     border-radius: 50px;
-    padding: 10px;
+    padding: 8px;
+    margin-top: -2%; 
+    font-size: 15px;
 }
 
 /* icones ideias */
@@ -291,8 +304,9 @@ nav .list-menu a:hover::before{
     display: block;
     align-content: center;
     text-align: center;
-    color: rgb(88, 85, 85);
-    background-image: linear-gradient(to right, rgba(22, 18, 18, 0.027),#0074f880);
+    color: #2e2e2e;
+    background-color: #299fad;
+    /*background-image: linear-gradient(to right, rgba(22, 18, 18, 0.027),#0074f880);*/
     height:470px;
     width: 100%;
     font-family:sans-serif;
@@ -324,7 +338,7 @@ input{
     height:300px;
     width: 550px;
     float: right;
-    margin: 30px;
+    /*margin: 30px;*/
     margin-top: 100px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 23px;
@@ -539,6 +553,10 @@ form .submit:hover{
 .btn-produto, .botaoConfig{
     cursor: pointer;
     background-color:rgb(0, 0, 0);
+<<<<<<< HEAD
+=======
+    border-radius:20px;
+>>>>>>> 6b021f81aa2ed3ad42cd4de24255145cfea81317
 }
 /* responsivo menu*/
 @media (max-width:620px){

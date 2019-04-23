@@ -6,7 +6,7 @@
     height: 100% !important;
     width: 200px !important;
     background:#5b5c5c !important;
-    position: absolute !important;
+    position: fixed !important;
     z-index: 2 !important;
     list-style-type: none !important;
 }

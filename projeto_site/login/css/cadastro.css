@@ -107,7 +107,7 @@ a{
     border-left-color: #ffffff96;
    
 }
-#lDireito:hover,#lEsquerdo:hover{
+#lDireito:hover,#lEsquerdo:hover,#ReturnLogin:hover {
     cursor: pointer;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
@@ -137,4 +137,13 @@ a{
     border-bottom-right-radius: 50px;
     margin-bottom: 0%;
     display: flex;
+}
+
+#ReturnLogin {
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 128, 128, 0.842);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
