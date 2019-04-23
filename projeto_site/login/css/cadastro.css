@@ -11,7 +11,6 @@ html{
     -moz-background-size: cover; 
     -ms-background-size: cover; 
     -o-background-size: cover;
-    overflow: hidden;
 }
 
 img{
@@ -142,7 +141,10 @@ a{
     height: 45px;
     padding: 10px;
     text-align: center;
-    background: rgba(0, 128, 128, 0.842);
+    background: #00000083;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+}
+#tornarLogin {
+    font-size: 20px;
 }
