@@ -210,12 +210,8 @@ nav .list-menu a:hover::before{
 }
 
 .conteudo p{
-<<<<<<< HEAD
-    font-size: 16px;
-=======
     
     font-size: 20px;
->>>>>>> 6b021f81aa2ed3ad42cd4de24255145cfea81317
     /* font-family: Merriweather,"Helvetica Neue",Arial,sans-serif; */
 }
 
@@ -553,10 +549,7 @@ form .submit:hover{
 .btn-produto, .botaoConfig{
     cursor: pointer;
     background-color:rgb(0, 0, 0);
-<<<<<<< HEAD
-=======
     border-radius:20px;
->>>>>>> 6b021f81aa2ed3ad42cd4de24255145cfea81317
 }
 /* responsivo menu*/
 @media (max-width:620px){
