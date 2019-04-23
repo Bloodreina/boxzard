@@ -201,17 +201,14 @@ nav .list-menu a:hover::before{
 
 .conteudo{
     display: block;
-    margin: 0 13%;
+    margin: 0 20%;
     text-align: center;
-    margin-top: -2%;
-}
-.d{
-    font-size: 18px;
+    
 }
 
 .conteudo p{
     
-    font-size: 20px;
+    font-size: 18px;
     /* font-family: Merriweather,"Helvetica Neue",Arial,sans-serif; */
 }
 
