@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/cadastro.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
     <title>Login</title>
 </head>
 
 <body>
-    <script>
-        var pagina = 0;
-    </script>
     <!-- <img src="logo" alt=""> -->
     <header>
         <img src="img/Logo.png" alt="logo">
@@ -26,11 +24,11 @@
             <h2 id="titulo">Cadastro</h2>
             <div id="conteudo">
 
-                <input type="text" placeholder="nome">
-                <input type="text" placeholder="Sobrenome">
-                <input type="text" placeholder="e-mail">
-                <input type="password" placeholder="senha">
-                <input type="password" placeholder="confirmar senha">
+                <input type="text" placeholder="nome" id="nome">
+                <input type="text" placeholder="Sobrenome" id="sobrenome">
+                <input type="text" placeholder="e-mail" id="email">
+                <input type="password" placeholder="senha" id="senha">
+                <input type="password" placeholder="confirmar senha" id="confirmar_senha">
             </div>
             <div id="conteudo2">
                 <input type="number" placeholder="CPF/CNPJ">
@@ -44,12 +42,12 @@
                 <input type="text" placeholder="potência">
             </div>
             <div id="rodape">
-                <div id="lEsquerdo" onclick="proximo(--pagina)">
+                <div id="lEsquerdo" onclick="proximo('voltar')">
                     <a id="aaa">
                        Voltar
                     </a>
                 </div>
-                <div id="lDireito" onclick="proximo(++pagina)">
+                <div id="lDireito" onclick="proximo('frente')">
                     <a>
                         Proximo
                     </a>
