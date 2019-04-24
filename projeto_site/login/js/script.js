@@ -29,25 +29,22 @@ function proximo(pag){
         window.location = 'cadastro.html';
     }
 }
-function entrar(){
-    window.location = 'System/home.html';
-}
 
 function irLogin(){
     window.location = 'login.html';
 }
 
-    // Script de login
-    var user= "admin" ,password= "admin";
+    // Inicio Script de login
+    var user = "admin", password = "admin";
 
     function logar(){
-        if(user==login.value && password==senha.value){
+        if(user == login.value && password == senha.value){
             window.location = 'System/home.html';
-        }else if(login.value=="" || senha.value==""){
-            swal("Preencha os campos para fazer login","","warning");
+        }else if(login.value == "" || senha.value == ""){
+            swal("Preencha os campos para fazer login", "", "warning");
         }else{
-            swal("Usuário ou senha incorretos","Preencha novamente","warning");
+            swal("Usuário ou senha incorretos", "Preencha novamente", "warning");
         }
 
     }
-    
+    // Fim Script de login
