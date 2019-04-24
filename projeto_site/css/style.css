@@ -298,7 +298,7 @@ nav .list-menu a:hover::before{
     align-content: center;
     text-align: center;
     color: #2e2e2e;
-    background-color: #299fad;
+    background-color: #299fade8;
     /*background-image: linear-gradient(to right, rgba(22, 18, 18, 0.027),#0074f880);*/
     height:470px;
     width: 100%;
