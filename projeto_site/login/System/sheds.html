@@ -69,31 +69,31 @@
 											<td>Maças</td>
 											<td>22° C</td>
 											<td>53%</td>
-											<td><a href="" class="card-link">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Bananas</td>
 											<td>26° C</td>
 											<td>49%</td>
-											<td><a href="" class="card-link">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Trigo</td>
 											<td>28° C</td>
 											<td>38%</td>
-											<td><a href="" class="card-link">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Remédios</td>
 											<td>15° C</td>
 											<td>30%</td>
-											<td><a href="" class="card-link">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Remédios</td>
 											<td>11° C</td>
 											<td>32%</td>
-											<td><a href="" class="card-link">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -151,11 +151,108 @@
 					</div>
 
 					<div class="modal-body">
-						
+						<div class="row">
+							<div class="col-md-6">
+
+								<div>
+									
+									<div>
+										<h5>Galpão selecionado:</h5>
+										<input class="form-control" type="text" placeholder="" value="Galpão 1">
+									</div>
+
+									<div>
+										<h5>Endereço do Galpão:</h5>
+										<input class="form-control" type="text" placeholder="" value="Lado leste, sessão 3">
+									</div>
+
+									<div>
+										<h5>Quantidade de ar condicionado:</h5>
+										<input class="form-control" type="text" placeholder="" value="22">
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-6">
+								<div>
+									<h5>Quantidade de sensores instalados:</h5>
+									<input class="form-control" type="text" placeholder="" value="22">
+								</div>
+
+								<div>
+									<h5>Serviço atual:</h5>
+									<input class="form-control" type="text" placeholder="" value="Controle inteligente de temperatura e umidade do ambiente.">
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Concluir</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modalTabela" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header ">
+
+						<h4 class="modal-title">Editar informãções do Galpão
+							<br>
+						</h4>
+
+						<button type="button" class="close button-close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+
+
+					</div>
+
+					<div class="modal-body">
+
+						<form>
+							<div class="form-group center-modal mx-auto">
+								<div>
+									<h5>Nome do produto:</h5>
+									<input class="form-control" type="text" placeholder="">
+								</div>
+		
+								<div>
+									<h5>Temperatura mínima:</h5>
+									<input class="form-control" type="text" placeholder="">
+								</div>
+		
+								<div>
+									<h5>Temperatura máxima:</h5>
+									<input class="form-control" type="text" placeholder="">
+								</div>
+		
+								<div>
+									<h5>Umidade mínima:</h5>
+									<input class="form-control" type="text" placeholder="">
+								</div>
+		
+								<div>
+									<h5>Umidade máxima:</h5>
+									<input class="form-control" type="text" placeholder="">
+								</div>
+							</div>
+						</form>
+
+					</div>
+
+					<div class="modal-footer">
+							<div class="btn-group-toggle" data-dismiss="modal" data-toggle="buttons">
+									<label class="btn btn-secondary active">
+									  <input type="checkbox" checked autocomplete="off"> Configuração padrão
+									</label>
+								  </div>
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar alterações</button>
 					</div>
 				</div>
 			</div>

@@ -87,6 +87,10 @@
     body{
         background-color: #e4e4e491 !important;
     }
+
+    .center-modal {
+        width: 400px;
+    }
     /* #main{
         margin: auto;
         align-items: center;
