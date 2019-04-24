@@ -2,17 +2,15 @@
     display: block;
     width: 500px; 
     margin: auto;
-    padding: 20px;
 }
 .linha{
     display: flex;
 }
 .tela{
     display: flex;
-    margin-left: 5%;
 }
 .contEsquerdo{
-    padding-left: 10%; 
+    padding-left: 2%; 
 }
 .linha h3{
     font-size: large;
@@ -36,12 +34,22 @@ body{
     border-right: 2px #CCCCCC solid;
     margin: 0;
     padding: 0;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .ldEsquerdo h3{
     color: #ad2929;
+    width: 227px;
+    text-align: left;
 }
 .ldDireito h3{
     color: #299fad;
+    width: 227px;
+    text-align: left;
+}
+.ldDireito{
+    padding-right: 35px;
+    padding-left: 35px;
 }
 h1 {
     text-align: center;
@@ -58,4 +66,13 @@ p {
 
 .esconder{
     display: none;   
+}
+
+@media(max-width: 1362px){
+    .tela{
+        display: block;
+    }
+    .table{
+        width:497px !important;
+    }
 }
