@@ -47,7 +47,7 @@
                     <div class="form-group col-md-3">
                         <label for="telefone">Telefone</label>
                     <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Digite o telefone" id="telefone" aria-label="Telefone" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control" id="telefone" placeholder="Ex: (00) 00000-0000" aria-label="Telefone" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                               <button class="btn btn-outline-secondary" type="button" class="btn btn-sucess" onclick="adicionarTelefone(telefone.value, 'telefones')">+</button>
                             </div>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="form-group col-md-3">
                         <label for="telefones">Adicionados</label>
-                            <select id="telefones" class="form-control" required>
+                            <select id="telefones" class="form-control">
                                 <option value="">
                                     Telefones Adicionados
                                 </option>
@@ -94,6 +94,12 @@
             </form>
         </div>
         <div id="nav"></div>
+
+        <!-- Scripts para masked input do telefone  -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="maskedInput/jquery.mask.min.js"></script>
+
     </body>
 </html>
 
@@ -102,6 +108,8 @@
 			
     $(document).ready(function(){
         $('#nav').load('barraLateral.html');
+
+        $('#telefone').mask('(00) 00000-0000');
     });
     
 </script>
