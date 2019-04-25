@@ -5,7 +5,7 @@ function next(direction){
         if(direction=='front'){
 
             if(nome.value == '' || sobrenome.value == '' || email.value == '' || senha.value == '' || confirmar_senha.value == ''){
-                swal('Preencher'); //Configurar certinho o swal
+                swal("Preencha todos os campos!", "", "warning"); //Configurar certinho o swal
             }else{
                 conteudo.style.display = 'none';
                 conteudo2.style.display = 'block';
@@ -23,8 +23,8 @@ function next(direction){
 
         if(direction=='front'){
 
-            if(false){ //Apagar o false e verificar se os campos estão vazios
-                swal('Preencher'); //Configurar certinho o swal
+            if(cpf.value == '' || local.value == '' || numero_casa.value == '' || complemento.value == ''){
+                swal("Preencha todos os campos!", "", "warning");
             }else{
                 conteudo2.style.display = 'none';
                 conteudo3.style.display = 'block';
@@ -47,10 +47,10 @@ function next(direction){
     }else if(pagina == 3){
 
         if(direction=='front'){
-            if(false){ //Apagar o false e verificar se os campos estão vazios
-                swal(Preencher); //Configurar certinho o swal
+            if(tamanho.value == '' || qtd_ar.value == '' || potencia.value == ''){
+                swal("Preencha todos os campos!", "", "warning");
             }else{
-                swal('Cadastro efetuado com Sucesso').then((value) =>{  //Configurar certinho o texto do swal
+                swal('Cadastro efetuado com Sucesso').then((value) =>{
     
                     window.location = 'login.html';
                 });
