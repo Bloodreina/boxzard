@@ -15,6 +15,9 @@
     <!-- <img src="logo" alt=""> -->
     <header>
         <img src="img/Logo.png" alt="logo">
+        <script>
+        var pagina = 1;
+        </script>
         <form action="" method="post">
             <div id="topo"></div>
             <div id="ReturnLogin" onclick="irLogin()" style="display: none;">
@@ -42,12 +45,12 @@
                 <input type="text" placeholder="potência">
             </div>
             <div id="rodape">
-                <div id="lEsquerdo" onclick="proximo('voltar')">
+                <div id="lEsquerdo" onclick="next('back')">
                     <a id="aaa">
-                       Voltar
+                       Login
                     </a>
                 </div>
-                <div id="lDireito" onclick="proximo('frente')">
+                <div id="lDireito" onclick="next('front')">
                     <a>
                         Proximo
                     </a>
