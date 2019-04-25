@@ -118,7 +118,21 @@
 							
 							<h2 class="alert bg-secondary text-light text-center">Notificações</h2>
 
-							<div class="card">
+							<!-- Inicio Card sem notificação -->
+							<div class="card" id="semNotificacao" style="display: none;">
+								<div class="card-header">
+									<h6>Não existem notificações agora!</h6>
+								</div>
+								<div class="card-body">
+									<p>
+										Pode ficar tranquilo que está tudo em ordem!
+									</p>
+								</div>
+							</div>
+							<!-- Fim card sem notificação -->
+							
+
+							<div class="card" id="notificacao1">
 								<div class="card-header">
 									<h6>Mudança de temperatura brusca detectada!</h6>
 								</div>
@@ -129,10 +143,11 @@
 								</div>
 								<div class="card-footer">
 									<a href="sheds.html" class="btn btn-secondary">Ver Detalhes</a>
-									<button class="btn btn-success">Resolvido</button>
-									<button class="btn btn-danger">Ignorar</button>
+									<button class="btn btn-success" onclick="notificacao(1)">Resolvido</button>
+									<button class="btn btn-danger" onclick="notificacao(1)">Ignorar</button>
 								</div>
 							</div>
+
 												
 						</div>
 				</div>

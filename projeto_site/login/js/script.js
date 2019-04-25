@@ -87,7 +87,7 @@ function logar(){
     }else if(login.value == "" || senha.value == ""){
         swal("Atenção","Preencha todos os campos!", "warning");
     }else{
-        swal("Usuário ou senha incorretos", "Preencha novamente", "warning");
+        swal("Usuário ou senha incorretos!", "Preencha novamente", "warning");
     }
 
 }
