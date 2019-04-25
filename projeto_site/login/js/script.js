@@ -34,6 +34,10 @@ function irLogin(){
     window.location = 'login.html';
 }
 
+
+function irIndex(){
+    window.location = '../index.html';
+}
     // Inicio Script de login
     var user = "admin", password = "admin";
 
