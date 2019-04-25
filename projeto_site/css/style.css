@@ -533,11 +533,11 @@ form .submit:hover{
 
 /* rodape */
 .rodape{
-    height: 250px;
+    height: 190px;
     background-color:rgba(61, 61, 63, 0.979);
     color:#fff;
     font-size: 16px;
-    padding: 25px;
+    padding: 10px;
     text-align: left;
     font-family: sans-serif;
     
@@ -601,9 +601,13 @@ form .submit:hover{
     }
 }
 .Logo {
-    
-    width: 300px;
+    align-content: center;
+    width: 230px;
 }
 .icon-telefone{
-    width: 20px; 
+    width: 15px; 
+}
+
+.rodape_direita{
+    text-align: right;
 }

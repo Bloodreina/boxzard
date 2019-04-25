@@ -1,13 +1,27 @@
-function proximo(pag){
-    if(pag==1){
-        conteudo.style.display = 'none';
-        conteudo2.style.display = 'block';
-        conteudo3.style.display = 'none';
-        aaa.innerHTML = 'Voltar';
-        tornarLogin.innerHTML = 'Login';
-        ReturnLogin.style.display = 'block';
-        topo.style.display = 'none';
-    }else if(pag==2){
+function proximo(lado){
+    var pag = 0;
+    if(pag==0){
+        if(lado == 'frente'){
+
+            if (nome.value != '' && sobrenome.value != '' && email.value != '' && senha.value != '' && confirmar_senha.value != '') {
+                conteudo.style.display = 'none';
+                conteudo2.style.display = 'block';
+                conteudo3.style.display = 'none';
+                aaa.innerHTML = 'Voltar';
+                tornarLogin.innerHTML = 'Login';
+                ReturnLogin.style.display = 'block';
+                topo.style.display = 'none';
+                pag = 2;
+            }
+            else {
+                swal("Preencha todos os campos!", "", "warning");
+                pag=0;
+            }
+        }else{
+            pag = 1;
+        }
+    }else if(pag==1){
+        pag = 3;
         conteudo2.style.display = 'none';
         conteudo3.style.display = 'block';
         conteudo.style.display = 'none';
@@ -25,11 +39,10 @@ function proximo(pag){
     }else{
         window.location = 'login.html';
     }
-    if(pag=="cadastro"){
-        window.location = 'cadastro.html';
-    }
 }
-
+function irCadastro(){
+    window.location = 'cadastro.html';
+}
 function irLogin(){
     window.location = 'login.html';
 }
