@@ -4,12 +4,19 @@ create table tbLogin (
     senha varchar(30) NOT NULL,
 );
 
+create table tbEndereco (
+    codEndereco int primary key identity,
+    cep varchar(12) NOT NULL,
+    numero int NOT NULL,
+    complemento varchar(20)
+);
+
 create table tbAmbienteIdeal (
     codAmbiente int primary key identity,
-    maxTempIdeal float NOT NULL,
     minTempIdeal float NOT NULL,
-    maxHumyIdeal float NOT NULL,
-    minHumyIdeal float NOT NULL
+    maxTempIdeal float NOT NULL,
+    minHumyIdeal float NOT NULL,
+    maxHumyIdeal float NOT NULL
 );
 
 create table tbAmbienteGe (
@@ -23,7 +30,8 @@ create table tbAmbienteGe (
 create table tbGalpao (
     codGalpao int primary key identity,
     tamanho float NOT NULL,
-    qtdArcondicionado int NOT NULL
+    qtdArcondicionado int NOT NULL,
+    fkEndereco int foreign key references tbEndereco(codEndereco)
 );
 
 create table tbSensor (
@@ -40,6 +48,16 @@ create table tbDadosCapturados (
     fkSensor int foreign key references tbSensor (codSensor)
 );
 
+create table tbMetricas (
+    codMetrica int primary key identity,
+    min float NOT NULL,
+    media float NOT NULL,
+    mediana float NOT NULL,
+    max float NOT NULL,
+    identificador int NOT NULL,
+    fkSensor int foreign key references tbSensor(codSensor)
+);
+
 create table tbProduto (
     codProduto int primary key identity,
     nomeProduto varchar (25) NOT NULL,
@@ -52,10 +70,8 @@ create table tbUsuario (
     codUsuario int primary key identity,
     cpf_cnpj varchar (20) NOT NULL,
     nomeCompleto varchar (40) NOT NULL,
-    cep varchar (12) NOT NULL,
-    numero int NOT NULL,
-    complemento varchar (20) NOT NULL,
-    fkEmail int foreign key references tbLogin (codEmail)
+    fkEmail int foreign key references tbLogin (codEmail),
+    fkEndereco int foreign key references tbEndereco(codEndereco)
 );
 
 create table tbTelefone (
