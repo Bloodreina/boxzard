@@ -19,8 +19,8 @@ create table tbAmbienteIdeal (
     maxHumyIdeal float NOT NULL
 );
 
-create table tbAmbienteGe (
-    codAmbienteGe int primary key identity,
+create table tbAmbienteGenerico (
+    codAmbienteGenerico int primary key identity,
     maxTempIdeal float NOT NULL,
     minTempIdeal float NOT NULL,
     maxHumyIdeal float NOT NULL,
@@ -31,7 +31,8 @@ create table tbGalpao (
     codGalpao int primary key identity,
     tamanho float NOT NULL,
     qtdArcondicionado int NOT NULL,
-    fkEndereco int foreign key references tbEndereco(codEndereco)
+    fkEndereco int foreign key references tbEndereco(codEndereco),
+    fkUsuario int foreign key references tbUsuario(codUsuario)
 );
 
 create table tbSensor (
@@ -63,6 +64,7 @@ create table tbProduto (
     nomeProduto varchar (25) NOT NULL,
     tipoProduto varchar (20) NOT NULL,
     fkAmbienteIdeal int foreign key references tbAmbienteIdeal (codAmbiente),
+    fkAmbienteGenerico int foreign key references tbAmbienteGenerico (codAmbienteGenerico),
     fkGalpao int foreign key references tbGalpao (codGalpao)
 );
 

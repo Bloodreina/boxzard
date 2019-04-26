@@ -1,66 +1,113 @@
-insert into tbUsuario (nomeCompleto, cpf_cnpj, cep, numero, complemento) values
-('Alex Celestino',   45662809852, 04880-272, 686, 'local 2'),
-('Amanda Aparecida', 98158914802, 19960970, 210, 'local 3'),
-('Gustavo Caires',   90924574852, 19960970, 507, 'local 4'),
-('João Pedro',       33709259827, 19960970, 752, 'local 5'),
-('Lais da Silva',    11753546869, 19960970, 978, 'local 6'),
-('BoxZard',          42233370848, 19960970, 675, 'Empresa'),
-('Alex Buarque',   47586727848, 08140-060, 1030, 'Casa 1');
 
-insert into tbTelefone (telefone) values 
-(14987618754),(1427122738),
-(1427644822),(14995003463),
-(1439575912),(14994299943),
-(1128623996),(11986123488),
-(1139231574),(11996693852),
-(1137693055),
-(1138181288);
+	-- Insert da tabela login
+	insert into tbLogin (email, senha) values 
+		('alexbuarque@gmail.com', 'x6yr2qZu5W'),
+		('alexcelestino@outloock.com.br', 'a3Xrke8w01'),
+		('amandaaparecida@otmail.com', 'a3Xrke8w01'),
+		('gustavocaires@gmail.com', 'DYGHZgKoDH'),
+		('joaopedro@hotmail.com', 'rChWBfBkdU'),
+		('boxzardcontato@zardtec.com', 'qBHtHcqhCc'),
+		('laissilva@gmail.com', '5O4aUmoppr')
+	;
 
-select * from tbLogin;
+	-- Insert da tabela de endereços
+	insert into tbEndereco values
+		('04880272', '686', 'local 2'),
+		('19960970', '210', 'local 3'),
+		('19960970', '507', 'local 4'),
+		('19960970', '752', 'local 5'),
+		('19960970', '978', 'local 6'),
+		('19960970', '675', 'Empresa'),
+		('08140060', '1030', 'Casa 1'),
+		('25478987', '888', 'Lado B Leste'),
+		('25478987', '888', 'Lado B Oeste'),
+		('78456212', '12', 'Galpão 1'),
+		('14587898', '1', 'Galpão 1'),
+		('14587898', '1', 'Galpão 2'),
+		('14587898', '1', 'Galpão 3')
+	;
+	-- Insert da tabela Usuário
+	insert into tbUsuario values
+	    ('45662809852', 'Alex Celestino', 2, 1),
+	    ('98158914802', 'Amanda Aparecida', 3, 2),
+	    ('90924574852', 'Gustavo Caires', 4, 3),
+	    ('João Pedro',  '33709259827', 5, 4),
+	    ('33709259827', 'Lais da Silva', 7, 5),
+	    ('42233370848', 'BoxZard', 6, 6),
+	    ('47586727848', 'Alex Buarque', 1, 7)
+	;
 
-insert into tbLogin (email, senha) values 
-('alexbuarque@gmail.com','x6yr2qZu5W'),
-('alexcelestino@outloock.com.br','a3Xrke8w01'),
-('amandaaparecida@otmail.com','a3Xrke8w01'),
-('gustavocaires@gmail.com','DYGHZgKoDH'),
-('joaopedro@hotmail.com','rChWBfBkdU'),
-('boxzardcontato@zardtec.com','qBHtHcqhCc'),
-('laissilva@gmail.com','5O4aUmoppr');
+	-- Insert da tabela telefone
+	insert into tbTelefone values 
+		(14987618754, 1),
+		(1427122738, 5),
+		(1427644822, 4),
+		(14995003463, 7),
+		(1439575912, 7),
+		(14994299943, 2),
+		(1128623996, 3),
+		(11986123488, 3),
+		(1139231574, 7),
+		(11996693852, 6),
+		(1137693055, 1),
+		(1138181288, 6)
+	;
 
-update tbUsuario set fkEmail = 1 where codUsuario = 1 ;
-update tbUsuario set fkEmail = 2 where codUsuario = 2 ;
-update tbUsuario set fkEmail = 3 where codUsuario = 3 ;
-update tbUsuario set fkEmail = 4 where codUsuario = 4 ;
-update tbUsuario set fkEmail = 5 where codUsuario = 5 ;
-update tbUsuario set fkEmail = 7 where codUsuario = 7 ;
-update tbUsuario set fkEmail = 6 where codUsuario = 7 ;
+	-- Insert da tabela galpão
+	insert into tbGalpao values
+    	(250, 4, 8, 7),
+    	(200, 4, 9, 2),
+    	(300, 6, 10, 5),
+    	(270, 5, 11, 1),
+    	(360, 7, 12, 4),
+    	(360, 8, 13, 3)
+	;
 
-update tbTelefone set fkUsuario = 1 where codTelefone = 1;
-update tbTelefone set fkUsuario = 2 where codTelefone = 2;
-update tbTelefone set fkUsuario = 1 where codTelefone = 3;
-update tbTelefone set fkUsuario = 3 where codTelefone = 4;
-update tbTelefone set fkUsuario = 4 where codTelefone = 6;
-update tbTelefone set fkUsuario = 4 where codTelefone = 5;
-update tbTelefone set fkUsuario = 5 where codTelefone = 7;
-update tbTelefone set fkUsuario = 5 where codTelefone = 8;
-update tbTelefone set fkUsuario = 6 where codTelefone = 9;
-update tbTelefone set fkUsuario = 6 where codTelefone = 10;
-update tbTelefone set fkUsuario = 7 where codTelefone = 11;
-update tbTelefone set fkUsuario = 7 where codTelefone = 12;
+	-- Insert da tabela Sensor
+	insert into tbSensor values
+	    ('DHT11', 1),
+	    ('DHT11', 2),
+	    ('DHT11', 3),
+	    ('DHT11', 4),
+	    ('DHT11', 5),
+	    ('DHT11', 6)
+	;
 
-insert into tbDadosCapturados values
-(25,74,1,NULL),
-(20,72,1,NULL),
-(06,34,1,NULL),
-(23,52,1,NULL),
-(20,47,1,NULL);
+	-- Insert da tabela Ambiente ideal
+	 insert into tbAmbienteIdeal values
+        (22, 31, 70, 80),
+        (18, 25, 70, 80),
+        (-1, 8, 20, 50),
+        (30, 15, 50, 55),
+        (2, 8, 40, 70)
+   	;
 
-select * from tbSensor;
+	-- Insert da tabela produto
+	insert into tbProduto values
+        ('Banana', 'Alimenticio', 1, 2),
+        ('Maça', 'Alimenticio', 2, 6),
+        ('Picanha', 'Alimenticio', 3, 1),
+        ('Insulina_regular', 'Fármaco', 4, 4),
+        ('Vacinas', 'Fármaco', 5, 3)
+    ;
 
-SELECT * from tbAmbienteIdeal;
+    -- Insert da tabela dados capturados
+    insert into tbDadosCapturados values
+		(25, 74, 1, NULL, 1),
+		(20, 72, 1, NULL, 2),
+		(06, 34, 1, NULL, 3),
+		(23, 52, 1, NULL, 4),
+		(20, 47, 1, NULL, 5)
+	;
 
-insert into tbSensor values
-    ('DHT11', 6)
-;
+	-- Insert na tabela métrica
+	insert into tbMetricas values
+		(24, 26, 26, 28, 1, 1),
+		(28, 41, 32, 34, 2, 3),
+		(2, 6, 3, 3, 2, 1)
+	;
 
-SELECT * FROM tbLogin INNER JOIN tbUsuario ON tbLogin.codemail = tbUsuario.codusuario where tbUsuario.codusuario = 7;
+
+
+
+
