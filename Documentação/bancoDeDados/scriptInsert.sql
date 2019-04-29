@@ -1,6 +1,6 @@
 
 	-- Insert da tabela login
-	insert into tbLogin (email, senha) values 
+	insert into login (email, senha) values 
 		('alexbuarque@gmail.com', 'x6yr2qZu5W'),
 		('alexcelestino@outloock.com.br', 'a3Xrke8w01'),
 		('amandaaparecida@otmail.com', 'a3Xrke8w01'),
@@ -11,7 +11,7 @@
 	;
 
 	-- Insert da tabela de endereços
-	insert into tbEndereco values
+	insert into endereco values
 		('04880272', '686', 'local 2'),
 		('19960970', '210', 'local 3'),
 		('19960970', '507', 'local 4'),
@@ -27,18 +27,18 @@
 		('14587898', '1', 'Galpão 3')
 	;
 	-- Insert da tabela Usuário
-	insert into tbUsuario values
+	insert into usuario values
 	    ('45662809852', 'Alex Celestino', 2, 1),
 	    ('98158914802', 'Amanda Aparecida', 3, 2),
 	    ('90924574852', 'Gustavo Caires', 4, 3),
-	    ('João Pedro',  '33709259827', 5, 4),
+	    ('33709259827', 'João Pedro', 5, 4),
 	    ('33709259827', 'Lais da Silva', 7, 5),
 	    ('42233370848', 'BoxZard', 6, 6),
 	    ('47586727848', 'Alex Buarque', 1, 7)
 	;
 
 	-- Insert da tabela telefone
-	insert into tbTelefone values 
+	insert into telefone values 
 		(14987618754, 1),
 		(1427122738, 5),
 		(1427644822, 4),
@@ -54,7 +54,7 @@
 	;
 
 	-- Insert da tabela galpão
-	insert into tbGalpao values
+	insert into galpao values
     	(250, 4, 8, 7),
     	(200, 4, 9, 2),
     	(300, 6, 10, 5),
@@ -64,7 +64,7 @@
 	;
 
 	-- Insert da tabela Sensor
-	insert into tbSensor values
+	insert into sensor values
 	    ('DHT11', 1),
 	    ('DHT11', 2),
 	    ('DHT11', 3),
@@ -74,7 +74,7 @@
 	;
 
 	-- Insert da tabela Ambiente ideal
-	 insert into tbAmbienteIdeal values
+	 insert into ambienteIdeal values
         (22, 31, 70, 80),
         (18, 25, 70, 80),
         (-1, 8, 20, 50),
@@ -83,7 +83,7 @@
    	;
 
 	-- Insert da tabela produto
-	insert into tbProduto values
+	insert into produto values
         ('Banana', 'Alimenticio', 1, 2),
         ('Maça', 'Alimenticio', 2, 6),
         ('Picanha', 'Alimenticio', 3, 1),
@@ -92,7 +92,7 @@
     ;
 
     -- Insert da tabela dados capturados
-    insert into tbDadosCapturados values
+    insert into dadosCapturados values
 		(25, 74, 1, NULL, 1),
 		(20, 72, 1, NULL, 2),
 		(06, 34, 1, NULL, 3),
@@ -101,7 +101,7 @@
 	;
 
 	-- Insert na tabela métrica
-	insert into tbMetricas values
+	insert into metricas values
 		(24, 26, 26, 28, 1, 1),
 		(28, 41, 32, 34, 2, 3),
 		(2, 6, 3, 3, 2, 1)

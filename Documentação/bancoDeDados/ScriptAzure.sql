@@ -1,17 +1,17 @@
-create table tbLogin (
+create table login (
     codEmail int primary key identity,
     email varchar(30) NOT NULL,
     senha varchar(30) NOT NULL,
 );
 
-create table tbEndereco (
+create table endereco (
     codEndereco int primary key identity,
     cep varchar(12) NOT NULL,
     numero int NOT NULL,
     complemento varchar(20)
 );
 
-create table tbAmbienteIdeal (
+create table ambienteIdeal (
     codAmbiente int primary key identity,
     minTempIdeal float NOT NULL,
     maxTempIdeal float NOT NULL,
@@ -19,7 +19,7 @@ create table tbAmbienteIdeal (
     maxHumyIdeal float NOT NULL
 );
 
-create table tbAmbienteGenerico (
+create table ambienteGenerico (
     codAmbienteGenerico int primary key identity,
     maxTempIdeal float NOT NULL,
     minTempIdeal float NOT NULL,
@@ -27,7 +27,15 @@ create table tbAmbienteGenerico (
     minHumyIdeal float NOT NULL
 );
 
-create table tbGalpao (
+create table usuario (
+    codUsuario int primary key identity,
+    cpf_cnpj varchar (20) NOT NULL,
+    nomeCompleto varchar (40) NOT NULL,
+    fkEmail int foreign key references tbLogin (codEmail),
+    fkEndereco int foreign key references tbEndereco(codEndereco)
+);
+
+create table galpao (
     codGalpao int primary key identity,
     tamanho float NOT NULL,
     qtdArcondicionado int NOT NULL,
@@ -35,21 +43,21 @@ create table tbGalpao (
     fkUsuario int foreign key references tbUsuario(codUsuario)
 );
 
-create table tbSensor (
+create table sensor (
     codSensor int primary key identity,
     tipo varchar(20) NOT NULL,
     fkGalpao int foreign key references tbGalpao (codGalpao)
 );
 
-create table tbDadosCapturados (
+create table dadosCapturados (
     codDado int primary key identity,
     tempCapturada float NOT NULL,
     humyCapturada float  NOT NULL,
-    dataCapturada smalldatetime  NOT NULL,
+    dataCapturada smalldatetime,
     fkSensor int foreign key references tbSensor (codSensor)
 );
 
-create table tbMetricas (
+create table metricas (
     codMetrica int primary key identity,
     min float NOT NULL,
     media float NOT NULL,
@@ -68,13 +76,7 @@ create table tbProduto (
     fkGalpao int foreign key references tbGalpao (codGalpao)
 );
 
-create table tbUsuario (
-    codUsuario int primary key identity,
-    cpf_cnpj varchar (20) NOT NULL,
-    nomeCompleto varchar (40) NOT NULL,
-    fkEmail int foreign key references tbLogin (codEmail),
-    fkEndereco int foreign key references tbEndereco(codEndereco)
-);
+
 
 create table tbTelefone (
     codTelefone int primary key identity,
