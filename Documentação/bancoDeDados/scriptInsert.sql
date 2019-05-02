@@ -92,12 +92,12 @@
     ;
 
     -- Insert da tabela dados capturados
-    insert into dadosCapturados values
-		(25, 74, 1, NULL, 1),
-		(20, 72, 1, NULL, 2),
-		(06, 34, 1, NULL, 3),
-		(23, 52, 1, NULL, 4),
-		(20, 47, 1, NULL, 5)
+    insert into tbDadosCapturados values
+	    (25, 74, getdate(), 1),
+	    (20, 72, getdate(), 2),
+	    (06, 34, getdate(), 3),
+	    (23, 52, getdate(), 4),
+	    (20, 47, getdate(), 5)
 	;
 
 	-- Insert na tabela métrica
