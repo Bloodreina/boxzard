@@ -6,6 +6,8 @@ function next(direction){
 
             if(nome.value == '' || sobrenome.value == '' || email.value == '' || senha.value == '' || confirmar_senha.value == ''){
                 swal("Atenção", "Preencha todos os campos!", "warning"); //Configurar certinho o swal
+            }else if(senha.value != confirmar_senha.value){
+                swal("Atenção", "As senhas devem ser iguais!", "warning");
             }else{
                 conteudo.style.display = 'none';
                 conteudo2.style.display = 'block';

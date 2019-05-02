@@ -15,7 +15,7 @@
             <img src="img/Logo.png" alt="logo" >
             <form action="" method="post">
                 
-                <div id="topo" onclick="irIndex() ">
+                <div id="topo" title="Voltar para o inicio" onclick="irIndex() ">
                     <br>
                 Home
                 
@@ -26,21 +26,21 @@
                     <div id="conteudo">    
                         <a>Login:</a>
                         <br>
-                        <input type="text" placeholder="Digite seu login" id="login" required>
+                        <input tabindex="1" type="text" placeholder="Digite seu login" id="login" required>
                         <br>
                         <a>Senha:</a>
                         <br>
-                        <input type="password" placeholder="Digite sua senha" id="senha" required>
+                        <input tabindex="2" type="password" placeholder="Digite sua senha" id="senha" required>
                         <br>
-                        <div id="esqueciSenha">Esqueceu sua senha? <a href="#">Clique aqui</a></div>
+                        <div id="esqueciSenha">Esqueceu sua senha? <a tabindex="5" href="#" title="Esqueci minha senha">Clique aqui</a></div>
                     </div>
                 <div id="rodape">
-                    <div id="lEsquerdo" onclick="irCadastro()">
+                    <div id="lEsquerdo" tabindex="4" title="Ir para tela de cadastro" onclick="irCadastro()">
                         <a>
                             Cadastre-se
                         </a>
                     </div> 
-                    <div id="lDireito" onclick="logar()">
+                    <div id="lDireito" tabindex="3" title="Fazer login" onclick="logar()">
                         <a>
                             Entrar
                         </a>

@@ -35,7 +35,7 @@
 
 											<h5>Selecionar Galpão:</h5>
 										<div class="input-group mb-12">
-											<select class="custom-select">
+											<select title="Selecione um galpão" class="custom-select">
 												<option>Selecione um galpão</option>
 												<option>Galpão 1</option>
 												<option>Galpão 2</option>
@@ -44,7 +44,7 @@
 												<option>Galpão 5</option>
 											</select>
 												<div class="input-group-append">
-												  <button class="btn btn-outline-secondary" type="button" class="btn btn-sucess" onclick="cadastrarGalpao()">+</button>
+												  <button class="btn btn-outline-secondary" title="Adicionar um galpão" type="button" class="btn btn-sucess" onclick="cadastrarGalpao()">+</button>
 												</div>
 											  </div>
 										</div>
@@ -69,31 +69,31 @@
 											<td>Maças</td>
 											<td>22° C</td>
 											<td>53%</td>
-											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela" title="Editar este produto">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Bananas</td>
 											<td>26° C</td>
 											<td>49%</td>
-											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela" title="Editar este produto">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Trigo</td>
 											<td>28° C</td>
 											<td>38%</td>
-											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela" title="Editar este produto">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Remédios</td>
 											<td>15° C</td>
 											<td>30%</td>
-											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela" title="Editar este produto">Editar</a></td>
 										</tr>
 										<tr>
 											<td>Remédios</td>
 											<td>11° C</td>
 											<td>32%</td>
-											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela">Editar</a></td>
+											<td><a href="" class="card-link" data-toggle="modal" data-target="#modalTabela" title="Editar este produto">Editar</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -129,8 +129,8 @@
 								<p>Controle inteligente de temperatura e umidade do ambiente.</p>
 							</div>
 
-							<a href="#" class="card-link" data-toggle="modal" data-target="#modalEditar">Editar Galpão</a>
-							<a href="" class="card-link">Cancelar Serviço</a>
+							<a href="#" class="card-link" data-toggle="modal" data-target="#modalEditar" title="Editar este galpão">Editar Galpão</a>
+							<a href="" class="card-link" title="Cancelar este serviço">Cancelar Serviço</a>
 
 						</div>
 											
@@ -192,7 +192,7 @@
 					</div>
 
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" data-dismiss="modal">Concluir</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal" title="Concluir alteração">Concluir</button>
 					</div>
 				</div>
 			</div>
@@ -251,10 +251,10 @@
 					<div class="modal-footer">
 							<div class="btn-group-toggle" data-dismiss="modal" data-toggle="buttons">
 									<label class="btn btn-secondary active">
-									  <input type="checkbox" checked autocomplete="off"> Configuração padrão
+									  <input type="checkbox" checked autocomplete="off" title="Redefinir para padrão"> Configuração padrão
 									</label>
 								  </div>
-						<button type="button" class="btn btn-primary" data-dismiss="modal">Salvar alterações</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal" title="Salvar alterações">Salvar alterações</button>
 					</div>
 				</div>
 			</div>

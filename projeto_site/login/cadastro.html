@@ -20,37 +20,37 @@
         </script>
         <form action="" method="post">
             <div id="topo"></div>
-            <div id="ReturnLogin" onclick="irLogin()" style="display: none;">
+            <div id="ReturnLogin" onclick="irLogin()" title="Voltar para Login" style="display: none;">
                 <br>
                 <a id="tornarLogin"></a>
             </div>
             <h2 id="titulo">Cadastro</h2>
             <div id="conteudo">
 
-                <input type="text" placeholder="nome" id="nome">
-                <input type="text" placeholder="Sobrenome" id="sobrenome">
-                <input type="text" placeholder="e-mail" id="email">
-                <input type="password" placeholder="senha" id="senha">
-                <input type="password" placeholder="confirmar senha" id="confirmar_senha">
+                <input type="text" tabindex="1" placeholder="nome" id="nome">
+                <input type="text" tabindex="2" placeholder="Sobrenome" id="sobrenome">
+                <input type="text" tabindex="3" placeholder="e-mail" id="email">
+                <input type="password" tabindex="4" placeholder="senha" id="senha">
+                <input type="password" tabindex="5" placeholder="confirmar senha" id="confirmar_senha">
             </div>
             <div id="conteudo2">
-                <input type="number" placeholder="CPF/CNPJ" id="cpf">
-                <input type="number" placeholder="CEP" id="local">
-                <input type="number" placeholder="Numero da casa" id="numero_casa">
-                <input type="text" placeholder="Complemento " id="complemento">
+                <input type="number" tabindex="7" placeholder="CPF/CNPJ" id="cpf">
+                <input type="number" tabindex="8" placeholder="CEP" id="local">
+                <input type="number" tabindex="9" placeholder="Numero da casa" id="numero_casa">
+                <input type="text" tabindex="10" placeholder="Complemento " id="complemento">
             </div>
             <div id="conteudo3">
-                <input type="number" placeholder="tamanho (m2)" id="tamanho">
-                <input type="text" placeholder="quantidade de ar-condicionado" id="qtd_ar">
-                <input type="text" placeholder="potência" id="potencia">
+                <input type="number" tabindex="12" placeholder="tamanho (m2)" id="tamanho">
+                <input type="text" tabindex="13" placeholder="quantidade de ar-condicionado" id="qtd_ar">
+                <input type="text" tabindex="14" placeholder="potência" id="potencia">
             </div>
             <div id="rodape">
-                <div id="lEsquerdo" onclick="next('back')">
+                <div id="lEsquerdo" title="Voltar para anterior" onclick="next('back')">
                     <a id="aaa">
                        Login
                     </a>
                 </div>
-                <div id="lDireito" onclick="next('front')">
+                <div id="lDireito" tabindex="6" title="Ir para o próximo" onclick="next('front')">
                     <a>
                         Proximo
                     </a>
