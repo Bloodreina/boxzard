@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="icon" type="image/png" href="../img/Camaleao.png">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <title>Login</title>
 </head>
@@ -28,8 +29,7 @@
             <h2 id="titulo">Cadastro</h2>
             <div id="conteudo">
 
-                <input type="text" tabindex="1" placeholder="nome" id="nome">
-                <input type="text" tabindex="2" placeholder="Sobrenome" id="sobrenome">
+                <input type="text" tabindex="1" placeholder="Nome completo" id="nome">
                 <input type="text" tabindex="3" placeholder="e-mail" id="email">
                 <input type="password" tabindex="4" placeholder="senha" id="senha">
                 <input type="password" tabindex="5" placeholder="confirmar senha" id="confirmar_senha">
@@ -37,8 +37,9 @@
             <div id="conteudo2">
                 <input type="number" tabindex="7" placeholder="CPF/CNPJ" id="cpf">
                 <input type="number" tabindex="8" placeholder="CEP" id="local">
-                <input type="number" tabindex="9" placeholder="Numero da casa" id="numero_casa">
-                <input type="text" tabindex="10" placeholder="Complemento " id="complemento">
+                <input type="text" tabindex="9" placeholder="Rua" id="rua" disabled>
+                <input type="number" tabindex="10" placeholder="Numero da casa" id="numero_casa">
+                <input type="text" tabindex="11" placeholder="Complemento " id="complemento">
             </div>
             <div id="conteudo3">
                 <input type="number" tabindex="12" placeholder="tamanho (m2)" id="tamanho">
