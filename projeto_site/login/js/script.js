@@ -95,11 +95,16 @@ function logar(){
 // Formulário de recuperação de senha com SweetAlert
 function recuperar(){
     swal({
+        title: 'Recuperar senha',
         text: 'Digite seu E-mail',
         content: "input",
         buttons: {
           cancel: "Cancelar",
           Enviar: true,
         },
-    });}
+    }).then((value) =>{
+        swal("Enviado","Verifique seu email!","success");
+    }
+    )
+    ;}
 // Fim Script de login
