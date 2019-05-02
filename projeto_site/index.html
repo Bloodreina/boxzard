@@ -8,6 +8,7 @@
     <title>BoxZard Tech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 </head>
 
@@ -30,12 +31,12 @@
                     </button>
                     <nav class="menu">
                         <ul class="list-menu">
-                            <li><a href="#home" class="scroll-Menu" id="mHome">Home</a></li>
-                            <li><a href="#sobre" class="scroll-Menu" id="mSobre">Sobre</a></li>
-                            <li><a href="#produto" class="scroll-Menu" id="mProduto">Produto</a></li>
-                            <li><a href="#simulador" class="scroll-Menu" id="mSimulador">Simulador</a></li>
-                            <li><a href="#faleConosco" class="scroll-Menu" id="mFale">Fale conosco</a></li>
-                            <li><a href="login/login.html" id="mlogin">Login</a></li>
+                            <li><a href="#home" class="scroll-Menu" id="mHome" title="Inicio">Home</a></li>
+                            <li><a href="#sobre" class="scroll-Menu" id="mSobre" title="Sobre">Sobre</a></li>
+                            <li><a href="#produto" class="scroll-Menu" id="mProduto" title="Produtos">Produto</a></li>
+                            <li><a href="#simulador" class="scroll-Menu" id="mSimulador" title="Simulador Financeiro">Simulador</a></li>
+                            <li><a href="#faleConosco" class="scroll-Menu" id="mFale" title="Fale Conosco">Fale conosco</a></li>
+                            <li><a href="login/login.html" id="mlogin" title="Ir para Login">Login</a></li>
 
                         </ul>
                     </nav>
@@ -46,7 +47,7 @@
             <div class="main-text">
                 <img src="img/Logo.png" class="logo" alt="logo">
                 <h2>Nos adaptamos à sua escolha</h2>
-                <a href="#sobre" class="btn main-btn scroll-Menu" id="botao">Leia Sobre</a>
+                <a href="#sobre" class="btn main-btn scroll-Menu" id="botao" title="Leia sobre">Leia Sobre</a>
             </div>
 
         </header>
@@ -166,7 +167,7 @@
                 prioridade a sua preferência e adequará o ambiente a temperatura e umidade desejada.</p>
         </div>
 
-        <button type="button" class="btn main-btn btn-produto" onclick="telaPedido()">Faça seu pedido agora</button>
+        <button type="button" class="btn main-btn btn-produto" onclick="telaPedido()" title="Faça seu pedido agora">Faça seu pedido agora</button>
 
     </section>
 
@@ -179,17 +180,17 @@
                 <h1> Simulador Financeiro</h1>
                 <p>
                     Quantidade de funcionários<br>
-                    <input id="func" type="number" placeholder="Digite o número de funcionários" required><br>
+                    <input tabindex="1" id="func" type="number" placeholder="Digite o número de funcionários" required><br>
                 </p>
                 <p>
                     Salário por funcionários<br>
-                    <input id="sal" type="number" placeholder="Digite o valor do salário" required> <br> <br>
+                    <input tabindex="2" id="sal" type="number" placeholder="Digite o valor do salário" required> <br> <br>
                 </p>
                 <p>
                     Informe a área do seu galpão <br>
-                    <input id="metro" type="number" placeholder="Digite sua área em m²" required> <br> <br>
+                    <input tabindex="3" id="metro" type="number" placeholder="Digite sua área em m²" required> <br> <br>
                 </p>
-                <button type="button" class="botaoConfig" onclick="calcula()"> Calcule seu Plano </button>
+                <button tabindex="4" type="button" class="botaoConfig" onclick="calcula()" title="Calcule seu plano"> Calcule seu Plano </button>
             </form>
 
             <div id="mensagem" class="resultado" style="color:black"></div>
@@ -210,18 +211,18 @@
                 </div>
 
                 <form id="contact-form">
-                    <input name="nome" type="text" class="form-control1" placeholder="Nome" required>
-                    <input name="sobreNome" type="text" class="form-control1" placeholder="Sobre Nome" required>
+                    <input tabindex="5" name="nome" type="text" class="form-control1" placeholder="Nome" required>
+                    <input tabindex="6" name="sobreNome" type="text" class="form-control1" placeholder="Sobre Nome" required>
                     <br>
 
-                    <input name="email" type="email" class="form-control1" placeholder="E-mail" required>
-                    <input name="telefone" type="numer" class="form-control1" placeholder="Telefone" required>
+                    <input tabindex="7" name="email" type="email" class="form-control1" placeholder="E-mail" required>
+                    <input name="telefone" tabindex="8" type="numer" class="form-control1" placeholder="Telefone" required>
                     <br>
 
-                    <textarea name="mensagem" class="form-control2" placeholder="Mensagem" row="4"
+                    <textarea name="mensagem" tabindex="9" class="form-control2" placeholder="Mensagem" row="4"
                         required></textarea><br>
 
-                    <input type="submit" class="form-control submit" value="ENVIAR MENSAGEM">
+                    <input type="submit" tabindex="10" class="form-control submit" title="Enviar mensagem" value="ENVIAR MENSAGEM">
                 </form>
 
             </div>
