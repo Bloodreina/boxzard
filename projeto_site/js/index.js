@@ -1,6 +1,10 @@
 // função do simulador financeiro
 
 function calcula(){
+
+    if(func.value == '' || sal.value == '' || metro.value == ''){
+        swal("Atenção", "Preencha todos os campos!", "warning"); 
+    }
     if(func.value!= '' && sal.value !='' && metro.value!= ''){
 
         var salario= (Number(sal.value) * 1.8);
