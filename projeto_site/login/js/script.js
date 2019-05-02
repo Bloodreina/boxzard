@@ -97,8 +97,17 @@ function logar(){
     }else{
         swal("Usuário ou senha incorretos!", "Preencha novamente", "warning");
     }
-
 }
+// Formulário de recuperação de senha com SweetAlert
+function recuperar(){
+    swal({
+        text: 'Digite seu E-mail',
+        content: "input",
+        buttons: {
+          cancel: "Cancelar",
+          Enviar: true,
+        },
+    });}
 // Fim Script de login
 
 
