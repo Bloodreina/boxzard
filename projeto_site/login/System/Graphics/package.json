@@ -11,5 +11,10 @@
     "url": "https://github/BandTec/boxzard"
   },
   "author": "João Pedro Soares",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "serialport": "^6.0.4"
+  }
 }

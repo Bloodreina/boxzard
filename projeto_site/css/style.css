@@ -533,7 +533,7 @@ form .submit:hover{
 
 /* rodape */
 .rodape{
-    height: 190px;
+    height: 150px;
     background-color:rgba(61, 61, 63, 0.979);
     color:#fff;
     font-size: 16px;
@@ -542,8 +542,10 @@ form .submit:hover{
     font-family: sans-serif;
     
 }
-
-.btn-produto, .botaoConfig{
+.imgContato{
+    display: flex;
+}
+.btn-simulador,.btn-produto, .botaoConfig{
     cursor: pointer;
     background-color:rgb(0, 0, 0);
     border-radius:20px;
@@ -610,4 +612,24 @@ form .submit:hover{
 
 .rodape_direita{
     text-align: right;
+    width: 48%;
+    margin-top: 20px;
+}
+
+.content-outer{
+    width: 48%;
+}
+
+.imgSeta{
+    width: 4%;
+}
+
+.designerSeta{
+    width: 50px;
+    margin: auto;
+    align-content: center;
+}
+
+.seta{
+    transition: all 4s ease-in-out;
 }
