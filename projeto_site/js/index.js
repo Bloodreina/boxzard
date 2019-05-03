@@ -17,7 +17,7 @@ function calcula(){
         var economia= subtracao * 12;
         var economiaFormatada = economia.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
         
-        mensagem.innerHTML= `Adquirindo nosso sistema você economizará : ${subtracaoFormatada} por mês e ${economiaFormatada} por ano.<br> Pagando apenas o valor de ${custoFormatado} por mês .`;
+        mensagem.innerHTML= `Aquirindo nosso produto...<br> Pagando apenas o valor de ${custoFormatado} por mês. <br> Você economizará : ${subtracaoFormatada} por mês e ${economiaFormatada} por ano.`;
         aaa.classList.add("animation");
         mensagem.style.display = "block";
         mensagem.style.opacity = 1;
