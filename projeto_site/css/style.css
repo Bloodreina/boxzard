@@ -560,7 +560,6 @@ form .submit:active{
     font-size: 16px;
     padding: 10px;
     text-align: left;
-<<<<<<< HEAD
     font-family: sans-serif;
     
 }
@@ -571,9 +570,7 @@ form .submit:active{
     cursor: pointer;
     background-color:rgb(0, 0, 0);
     border-radius:20px;
-=======
     font-family: sans-serif;   
->>>>>>> a96677cfa91f11d1d2aec7c39a5c8642175e36a8
 }
 /* responsivo menu*/
 @media (max-width:620px){
@@ -657,4 +654,8 @@ form .submit:active{
 
 .seta{
     transition: all 4s ease-in-out;
+}
+
+.nome{
+    width: 600px;
 }
