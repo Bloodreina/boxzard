@@ -1,3 +1,8 @@
+socket.on('temp', function(data) {
+        
+    }
+);
+
 socket.on('temp', function(data) { //Assim q o temp é recebido
 
     let dados = data.temp.split(","); //Tranforma as temperaturas recebidas em um vetor de duas posições e usa a virgula como separador
