@@ -10,7 +10,7 @@ create table tbEndereco(
 
 create table tbUsuario(
 	codUsuario int primary key identity,
-	cpf_cnpjUsuario varchar(11),
+	cpf_cnpjUsuario varchar(14),
 	nomeUsuario varchar(45),
 	emailUsuario varchar(45),
 	senhaUsuario varchar(256),
