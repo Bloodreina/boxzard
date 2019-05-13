@@ -1,4 +1,4 @@
-insert into tbEndereco values
+﻿insert into tbEndereco values
 	('02304001', 'SP', 'São Paulo', 'Rua Augusta', 700, 'Lote 1'),
 	('01311000', 'SP', 'São Paulo', 'Avenida Paulista', 250, 'Lote 1'),
 	('07178580', 'SP', 'Guarulhos', 'Rodovia Presidente Dutra', 1100, 'Setor A'),
@@ -49,5 +49,5 @@ insert into tbAmbiente values
 	(28, 26, 80, 70, 1),
 	(25, 18, 80, 70, 2),
 	(8, -1, 50, 20, 3),
-    (30, 15, 55, 50, 4),
+    	(30, 15, 55, 50, 4),
 	(7, 3, 70, 40, 5);
