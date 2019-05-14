@@ -33,7 +33,7 @@ insert into tbGalpao values
 
 insert into tbSensor values
 	('DHT11', 1),
-	('TIl35', 1);
+	('TIl32', 1);
 
 insert into tbDados values
 	('2018/02/12 19:22:31', 20, 70, 1);
