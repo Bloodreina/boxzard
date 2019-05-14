@@ -144,7 +144,7 @@ nav .list-menu a:hover::before{
 /* Tamanho do logo */
 .logo {
     margin-top: 7rem;
-    width: 700px;
+    width: 55%;
 }
 
 /* Botão na Tela Home */
@@ -215,17 +215,18 @@ nav .list-menu a:hover::before{
 
 .descricao{
     display: flex;
-    margin-left: 13%;
+    margin-left: 6%;
     margin-right: 20%;
     text-align: center;
     align-content: center;
     flex-direction: row;
     justify-content: center;
+    width: 80%;
 }
 
 .dMenor{
     width: 400px;
-    margin-left: 100px;
+    margin-left: 10%;
     border: solid #00000059 5px;
     border-radius: 50px;
     padding: 8px;
@@ -253,7 +254,7 @@ nav .list-menu a:hover::before{
     background-size: cover;
     width: 50%;
     padding: 80px;
-    height: 420px;
+    /* height: 420px; */
     margin-top: 10px;
     border-radius: 50px;
 }
@@ -266,7 +267,6 @@ nav .list-menu a:hover::before{
     padding: 80px;
     float: right;
     position: relative;
-    margin-top: -300px;
     height: 300px;
     border-radius: 50px;
 }
@@ -477,7 +477,7 @@ form{
 
 /*tamanho do formulario e estilo*/
 .form-control2{
-    width:600px;
+    width:71%;
     background:transparent;
     border:none;
     outline:none;
@@ -490,7 +490,7 @@ form{
 }
 
 .form-control{
-    width:600px;
+    width:71%;
     background:transparent;
     border:none;
     outline:none;
@@ -503,7 +503,7 @@ form{
 
 /*tamanho do formulario e estilo referente ao (nome, sobrenome,telefone,email)*/
 .form-control1{
-    width:300px;
+    width:71%;
     background:transparent;
     border:none;
     outline:none;
@@ -576,6 +576,15 @@ form .submit:active{
 @media (max-width:620px){
     .descricao{
         display: block;
+    }
+    .ideias{
+        height: 600px;
+    }
+    .divPrincipal1{
+        display: block !important;
+    }
+    .imgGalpao, .imgArduino, .textoProduto, .textoProduto2{
+        width: 100%;
     }
 }
 @media (max-width: 425px){
@@ -657,7 +666,7 @@ form .submit:active{
 }
 
 .nome{
-    width: 600px;
+    width: 71%;
 }
 
 /* Imagem SVG animação */
@@ -704,4 +713,8 @@ form .submit:active{
     100%{
         stroke-dashoffset: 0;
     }
+}
+
+.divPrincipal1{
+    display: flex;
 }
