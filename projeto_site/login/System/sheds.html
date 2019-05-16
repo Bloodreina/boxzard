@@ -36,7 +36,8 @@
 							<div class="row">
 									<div class="form-group col-md-12">
 
-											<h5>Selecionar Galpão:</h5>
+										<h5>Selecionar Galpão:</h5>
+
 										<div class="input-group mb-12">
 											<select title="Selecione um galpão" class="custom-select">
 												<option>Selecione um galpão</option>
@@ -46,16 +47,17 @@
 												<option>Galpão 4</option>
 												<option>Galpão 5</option>
 											</select>
-												<div class="input-group-append">
-												  <button class="btn btn-outline-secondary" title="Adicionar um galpão" type="button" class="btn btn-sucess" onclick="cadastrarGalpao()">+</button>
-												</div>
-											  </div>
-										</div>
+
+											<div class="input-group-append">
+											  <button class="btn btn-outline-secondary" title="Adicionar um galpão" type="button" class="btn btn-sucess" onclick="cadastrarGalpao()">+</button>
+											</div>
+										</div><br>
+
+										Para adicionar novo produto ao galpão <a href="#" class="card-link" data-toggle="modal" data-target="#modalAdcProduto">Clique Aqui</a>.
+
+									</div>
 
 							</div>
-							
-
-							<br>
 
 							<div>
 								<table class="table table-striped table-hover">
@@ -201,6 +203,54 @@
 			</div>
 		</div>
 
+		<div class="modal fade" id="modalAdcProduto" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Adicionar novo produto ao galpão</h4>
+
+						<button type="button" class="close button-close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						
+						<div>
+							<b>Nome do produto:</b>
+							<input type="text" id="nomeProduto" class="form-control" placeholder="Digite o nome do Produto"><br>
+						</div>
+
+						<div>
+							<h5>Temperatura mínima:</h5>
+							<input class="form-control" type="text" placeholder="Digite a temperatura mínima">
+						</div>
+
+						<div>
+							<h5>Temperatura máxima:</h5>
+							<input class="form-control" type="text" placeholder="Digite a temperatura máxima">
+						</div>
+
+						<div>
+							<h5>Umidade mínima:</h5>
+							<input class="form-control" type="text" placeholder="Digite a umidade mínima">
+						</div>
+
+						<div>
+							<h5>Umidade máxima:</h5>
+							<input class="form-control" type="text" placeholder="Digite a umidade máxima">
+						</div>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal" title="Salvar alterações">Adicionar Produto</button>
+
+						<button type="button" class="btn btn-secondary" data-dismiss="modal" title="Cancelar">Cancelar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="modal fade" id="modalTabela" tabindex="-1" role="dialog">
 			<div class="modal-dialog modal-md" role="document">
 				<div class="modal-content">
@@ -224,27 +274,27 @@
 							<div class="form-group center-modal mx-auto">
 								<div>
 									<h5>Nome do produto:</h5>
-									<input class="form-control" type="text" placeholder="">
+									<input class="form-control" type="text" placeholder="Digite o nome do produto">
 								</div>
 		
 								<div>
 									<h5>Temperatura mínima:</h5>
-									<input class="form-control" type="text" placeholder="">
+									<input class="form-control" type="text" placeholder="Digite a temperatura mínima">
 								</div>
 		
 								<div>
 									<h5>Temperatura máxima:</h5>
-									<input class="form-control" type="text" placeholder="">
+									<input class="form-control" type="text" placeholder="Digite a temperatura máxima">
 								</div>
 		
 								<div>
 									<h5>Umidade mínima:</h5>
-									<input class="form-control" type="text" placeholder="">
+									<input class="form-control" type="text" placeholder="Digite a umidade mínima">
 								</div>
 		
 								<div>
 									<h5>Umidade máxima:</h5>
-									<input class="form-control" type="text" placeholder="">
+									<input class="form-control" type="text" placeholder="Digite a umidade máxima">
 								</div>
 							</div>
 						</form>
