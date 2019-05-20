@@ -25,11 +25,11 @@ insert into tbTelefone values
 	(948261337, 5);
 
 insert into tbGalpao values
-	(300, 30, 1, 8),
-	(150, 15, 2, 6),
-	(200, 20, 3, 4),
-	(400, 40, 4, 5),
-	(100, 10, 5, 7);
+	('Galpao 1', 300, 30, 1, 8),
+	('Galpao 2', 150, 15, 2, 6),
+	('Galpao 3', 200, 20, 3, 4),
+	('Galpao 4', 400, 40, 4, 5),
+	('Galpao 5', 100, 10, 5, 7);
 
 insert into tbSensor values
 	('DHT11', 1),
